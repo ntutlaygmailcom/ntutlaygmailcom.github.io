@@ -1,12 +1,260 @@
-<!DOCTYPE html>
-<html>
-<body>
-<div>
-pei 
-<p>1</p>   
-</div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pei Protfolio</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/Navigation.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
+  <body>
+    <div id="MainContainer" style="height: 100%; width: 100%">
+      <!-- Sticky Header -->
+      <div id="NavigationAndHatchContainer">
+        <div id="NavigationHatch"></div>
 
+        <div id="Navigation">
+          <div class="Containernavigation">
+            <div class="LogoConTainer">
+              <img src="img/logo.svg" />
+            </div>
+            <div class="ButtonContainer">
+              <button class="Btn_Navigation">home</button>
 
-</body>
+              <button class="Btn_Navigation">Design</button>
+
+              <button class="Btn_Navigation">Research</button>
+
+              <button class="Btn_Navigation">About</button>
+
+              <button class="Btn_Navigation">Contect</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div style="width: 100%; height: calc(100% - 75px); display: flex">
+        <!-- 圖片區域 -->
+        <div
+          class="picture"
+          style="
+            width: 50%;
+            height: 100%;
+            background: #f5f5f5;
+            overflow: hidden;
+          "
+        >
+          <div
+            calss="PPT1"
+            style="
+              width: 100%;
+              height: 100%;
+              background-color: #f5f5f5f5;
+              display: flex;
+            "
+          >
+            <img src="img/cover.svg" />
+          </div>
+        </div>
+
+        <!-- 文字區域 -->
+        <div
+          class="writer"
+          style="
+            width: 50%;
+            height: 100%;
+            background-color: #fff;
+            overflow-y: auto; /* 開啟垂直滾動 */
+            padding: 28px;
+          "
+        >
+          <div
+            calss="writer1"
+            style="
+              width: 100%;
+              height: 25%;
+              margin: 12px 0px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+            "
+          >
+            <p
+              calss="SelfInfotitle"
+              style="
+                color: var(--Labels-Primary, #000);
+                font-family: Arial;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 25px; /* 125% */
+                letter-spacing: -0.2px;
+                margin: 0px 0xp 12px 0px;
+              "
+            >
+              HI! Im Pei
+            </p>
+            <p
+              class="Content"
+              style="
+                color: var(--Labels-Primary, #000);
+                font-family: Arial;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 25px;
+                letter-spacing: -0.2px;
+              "
+            >
+              Certainly! Here’s a fictional self-introduction for a UI/UX
+              designer: Hi there! My name is Alex Johnson, and I'm a passionate
+              UI/UX designer with over 6 years of experience in creating
+              intuitive and engaging digital
+            </p>
+          </div>
+
+          <div
+            class="MoreProject"
+            style="display: flex; justify-content: flex-end"
+          >
+            <button style="display: flex; align-items: center; gap: 8px">
+              More project
+              <img src="img/Next.svg" />
+            </button>
+          </div>
+
+          <div
+            calss="ProjectArea1"
+            style="
+              width: 100%;
+              height: 270px;
+              /* background-color: #844d4d; */
+              margin: 12px 0px;
+              display: flex;
+              align-items: center;
+              gap: 3%;
+            "
+          >
+            <button
+              class="EsunMIB"
+              style="
+                width: 100%;
+                height: 80%;
+                background-color: antiquewhite;
+                border-radius: 20px;
+                border-radius: var(--Number, 20px);
+                background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+              "
+            >
+              <img src="" alt="" />
+            </button>
+            <button
+              class="EsunMIB"
+              style="
+                width: 100%;
+                height: 80%;
+                background-color: antiquewhite;
+                border-radius: 20px;
+                border-radius: var(--Number, 20px);
+                background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+              "
+            >
+              <img src="" alt="" />
+            </button>
+          </div>
+
+          <div
+            calss="ProjectArea1"
+            style="
+              width: 100%;
+              height: 270px;
+              /* background-color: #844d4d; */
+              margin: 12px 0px;
+              display: flex;
+              align-items: center;
+              gap: 3%;
+            "
+          >
+            <button
+              class="EsunMIB"
+              style="
+                width: 100%;
+                height: 80%;
+                background-color: antiquewhite;
+                border-radius: 20px;
+                border-radius: var(--Number, 20px);
+                background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+              "
+            >
+              <img src="" alt="" />
+            </button>
+            <button
+              class="EsunMIB"
+              style="
+                width: 100%;
+                height: 80%;
+                background-color: antiquewhite;
+                border-radius: 20px;
+                border-radius: var(--Number, 20px);
+                background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+              "
+            >
+              <img src="" alt="" />
+            </button>
+          </div>
+          <div
+            calss="ProjectArea1"
+            style="
+              width: 100%;
+              height: 270px;
+              /* background-color: #844d4d; */
+              margin: 12px 0px;
+              display: flex;
+              align-items: center;
+              gap: 3%;
+            "
+          >
+            <button
+              class="EsunMIB"
+              style="
+                width: 100%;
+                height: 80%;
+                background-color: antiquewhite;
+                border-radius: 20px;
+                border-radius: var(--Number, 20px);
+                background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+              "
+            >
+              <img src="" alt="" />
+            </button>
+            <button
+              class="EsunMIB"
+              style="
+                width: 100%;
+                height: 80%;
+                background-color: antiquewhite;
+                border-radius: 20px;
+                border-radius: var(--Number, 20px);
+                background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+                box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+              "
+            >
+              <img src="" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

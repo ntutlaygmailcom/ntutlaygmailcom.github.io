@@ -1,0 +1,74 @@
+/*
+* @data 2025-11-05
+* Author: Arte 
+*
+* Arte Profolio
+-----------------------------------
+   1. Universe
+   2. Header
+   3. Navigation
+   
+
+ 
+-----------------------------------
+*/
+
+/*===============================
+			1. Header
+================================*/
+
+#NavigationAndHatchContainer {
+  position: sticky;
+  top: 0;
+}
+#NavigationHatch {
+  width: 100%;
+  height: 12px;
+  background: var(--Backgrounds-Primary, #373d35);
+  box-shadow: 0px 6px 4px 2px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+/*===============================
+              2. Navigation
+  ================================*/
+#Navigation {
+  width: 100%;
+  height: 63px;
+  background: #ecf0f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  position: sticky;
+}
+
+.Containernavigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0px 0px 0px;
+}
+.LogoConTainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.ButtonContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+
+.Btn_Navigation {
+  width: 76px;
+  height: 25px;
+  border-bottom: 2px solid #3c4043;
+}

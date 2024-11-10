@@ -1,0 +1,65 @@
+/*
+* @data 2025-11-05
+* Author: Arte 
+*
+* Arte Profolio
+-----------------------------------
+   1. Universe
+   2. Container
+   
+
+ 
+-----------------------------------
+*/
+
+/*===============================
+			1. Universe
+================================*/
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/*===============================
+			1. Container
+================================*/
+
+#MainContainer {
+  height: fit-content;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+#HRbackstage_mainContainer {
+  width: 100%;
+  height: calc(100% - 75px);
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(133deg, #f5f7fa 24.2%, #c3cfe2 69.65%);
+}
+
+#HRbackstage_SecContainer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#WelcomePage {
+  border-radius: 0px 0px 68px 68px;
+  opacity: 0.8;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(255, 255, 255, 0.5) 100%
+    ),
+    url(<path-to-image>) lightgray 0% 0% / 100px 100px repeat;
+}
+
+#WelcomePageImg {
+  aspect-ratio: 1/1;
+  background-color: none;
+}
