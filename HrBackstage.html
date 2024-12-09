@@ -7,44 +7,65 @@
     />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Pei Protfolio</title>
-    <link rel="stylesheet" href="css/HrBackstage.css" />
+
+    <link rel="stylesheet" href="css/Reset.css" />
+    <link rel="stylesheet" href="css/Variable.css" />
     <link rel="stylesheet" href="css/Navigation.css" />
+    <link rel="stylesheet" href="css/HrBackstage.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
 
   <body>
-    <div id="MainContainer" style="">
-      <!-- Sticky Header -->
-      <div id="NavigationAndHatchContainer">
+    <header class="header">
+      <div id="Container">
         <div id="NavigationHatch"></div>
-
         <div id="Navigation">
-          <div class="Containernavigation">
-            <div class="LogoConTainer">
-              <img src="img/logo.svg" />
-            </div>
-            <div class="ButtonContainer">
-              <button class="Btn_Navigation">home</button>
-
-              <button class="Btn_Navigation">Design</button>
-
-              <button class="Btn_Navigation">Research</button>
-
-              <button class="Btn_Navigation">About</button>
-
-              <button class="Btn_Navigation">Contect</button>
-            </div>
+          <div class="LogoConTainer">
+            <img src="img/logo.svg" />
           </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Design</a>
+              </li>
+              <li>
+                <a href="#">Research</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Contect</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </div>
+    </header>
+    <!-- Sticky Header -->
+
     <!-- Main Content -->
     <div id="HRbackstage_mainContainer">
-      <div id="HRbackstage_SecContainer">
-        <div id="WelcomePage">
-          <img id="WelcomePasgeImg" src="img/HRB_welcompage.svg" />
+      <figure id="HRbackstage_Welcomepage">
+        <img id="WelcomePageImg" src="img/HRB_welcompage.svg" />
+        <img class="Pillar" src="img/img-pillar.svg" />
+
+        <div id="WelcomepageTitle">
+          <h1 class="HRSYSTEM">HR SYSTEM</h1>
+          <h2 class="HRSYSTEM2">
+            E.sun Bank Human Resources Selection Website - Back Office
+          </h2>
         </div>
-        <div id=""></div>
+      </figure>
+      <div id="WecomePageSec">
+        <h1 class="HRSYSTEM3">提升人資管理效率與整合性</h1>
+        <h2 class="HRSYSTEM4">
+          # 專案目標<br />
+          1- 減少人資新人對於系統的學習時間<br />
+          2- 重新架構不同使用者介面需求 (系統中有三種使用者)<br />
+          3- 針對新舊系統進行了易用性測試，SUS量表成績顯著。<br />
+          4- 加快系統資訊整合與結案速度。<br />
+        </h2>
       </div>
     </div>
   </body>

@@ -6,6 +6,7 @@
 -----------------------------------
    1. Universe
    2. Container
+   3. RWD
    
 
  
@@ -18,8 +19,11 @@
 
 html,
 body {
-  height: 100%;
-  width: 100%;
+  background-image: var(--primary);
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: var(--primary-color);
+  overflow: hidden;
 }
 
 /*===============================
@@ -32,34 +36,119 @@ body {
   overflow-y: hidden;
 }
 
+#Container {
+  z-index: 100;
+}
+
 #HRbackstage_mainContainer {
   width: 100%;
   height: calc(100% - 75px);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* justify-content: center; */
   background: linear-gradient(133deg, #f5f7fa 24.2%, #c3cfe2 69.65%);
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
-#HRbackstage_SecContainer {
+#HRbackstage_Welcomepage {
   width: 100%;
   height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  padding: 8rem 0 8rem 0;
+  border-radius: 0 0 20px 20px;
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0.4) 100%
+    ),
+    url(<path-to-image>) lightgray 0% 0% / 100px 100px repeat;
+  /* opacity: 0.8; */
 }
 
 #WelcomePage {
+  width: 100%;
   border-radius: 0px 0px 68px 68px;
-  opacity: 0.8;
-  background: linear-gradient(
-      0deg,
-      rgba(255, 255, 255, 0.5) 0%,
-      rgba(255, 255, 255, 0.5) 100%
-    ),
-    url(<path-to-image>) lightgray 0% 0% / 100px 100px repeat;
+  /* opacity: 0.8; */
 }
 
 #WelcomePageImg {
-  aspect-ratio: 1/1;
+  /* aspect-ratio: 1/1; */
   background-color: none;
+  position: relative;
+  margin-left: 5%;
+  width: 80%;
+}
+
+.Pillar {
+  position: absolute;
+  right: -40px;
+  width: 32%;
+  top: 0;
+}
+
+#WelcomepageTitle {
+  position: absolute;
+  top: 90%;
+  left: 32%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+.HRSYSTEM {
+  color: #3c4043;
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 77.778% */
+  letter-spacing: 0.32px;
+  /* position: absolute; */
+  white-space: nowrap;
+}
+
+.HRSYSTEM2 {
+  color: #3c4043;
+  font-family: Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: -0.2px;
+  /* position: bsolute; */
+  white-space: nowrap;
+}
+
+#WecomePageSec {
+  position: absolute;
+  width: 100%;
+  height: fit-content;
+  top: 90%;
+  right: 10rem;
+  left: 8%;
+}
+
+.HRSYSTEM3 {
+  color: #3c4043;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: 0.32px;
+}
+
+.HRSYSTEM4 {
+  color: #3c4043;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px; /* 125% */
+  letter-spacing: -0.2px;
 }
