@@ -17,10 +17,29 @@ nav .btn-group {
   width: 90%;
   margin: auto;
   padding: 20px 0px;
+  @media (width<=760px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+  }
+}
+
+nav .btn-groupnologo {
+  gap: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 36px;
+  /* width: 90%; */
 }
 
 nav .logo {
   margin-right: auto;
+
+  @media (width<=760px) {
+    margin: unset;
+  }
 }
 
 nav .btn-group a {
@@ -45,6 +64,13 @@ nav .btn-group a:hover {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  @media (width<=760px) {
+    height: unset;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
 }
 .container .picture,
 .container .link {
@@ -53,6 +79,12 @@ nav .btn-group a:hover {
   /* outline: 1px solid #000; */
   box-sizing: border-box;
   overflow-y: scroll;
+
+  @media (width<=760px) {
+    height: 100%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+  }
 }
 
 .container .picture {
@@ -61,10 +93,18 @@ nav .btn-group a:hover {
   padding: 12px;
   margin-top: 14px;
   aspect-ratio: 16/9;
+  @media (width<=760px) {
+    height: 100%;
+    width: 100%;
+  }
 }
 
 .container .link {
   padding: 24px;
+  @media (width<=760px) {
+    width: 100%;
+    padding: unset;
+  }
 }
 
 /* .container .link .infogroup {
@@ -82,6 +122,11 @@ nav .btn-group a:hover {
   line-height: 25px; /* 125% */
   letter-spacing: -0.2px;
   padding: 0px 0px 20px 0px;
+
+  @media (width<=760px) {
+    padding: 20px 12px 0px 12px;
+    background-color: #ecf0f3;
+  }
 }
 .container .link .infocontent {
   color: #000;
@@ -91,10 +136,20 @@ nav .btn-group a:hover {
   font-weight: 400;
   line-height: 25px; /* 156.25% */
   letter-spacing: -0.2px;
+  @media (width<=760px) {
+    padding: 20px 12px;
+    background-color: #ecf0f3;
+  }
 }
 .container .link .more {
   text-align: right;
-  padding: 24px 0px;
+  padding: 24px 34px;
+
+  @media (width<=760px) {
+    background-color: #d3d3d3;
+    padding: 12px 12px;
+    margin-bottom: 44px;
+  }
 }
 .container .link .more a {
   text-decoration: none;
@@ -120,7 +175,7 @@ nav .btn-group a:hover {
   aspect-ratio: 16/9;
   object-fit: cover;
   object-position: center;
-  border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
@@ -128,6 +183,7 @@ nav .btn-group a:hover {
   margin-top: 20px;
   padding: 0;
   font-size: 22px;
+  background-color: unset;
 }
 
 .container .card-container .card h2 {
@@ -143,6 +199,12 @@ nav .btn-group a:hover {
 
 .container .card p {
   margin-top: 4px;
+  color: #000;
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 183.333% */
 }
 
 .container .link .card-container {
