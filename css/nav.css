@@ -16,7 +16,7 @@ nav .btn-group {
   gap: 36px;
   width: 90%;
   margin: auto;
-  padding: 20px 0px;
+  padding: 32px 0px 20px 0px;
   @media (width<=760px) {
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@ nav .btn-group {
 }
 
 nav .btn-groupnologo {
-  gap: 36px;
+  gap: 28px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -46,7 +46,7 @@ nav .btn-group a {
   color: #000;
   text-align: center;
   font-family: Miso;
-  font-size: 24px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -78,12 +78,12 @@ nav .btn-group a:hover {
   height: 100%;
   /* outline: 1px solid #000; */
   box-sizing: border-box;
-  overflow-y: scroll;
+  overflow-y: Auto;
 
   @media (width<=760px) {
     height: 100%;
     box-sizing: border-box;
-    overflow-y: scroll;
+    overflow-y: Auto;
   }
 }
 
@@ -156,6 +156,9 @@ nav .btn-group a:hover {
   font-family: miso;
   color: inherit;
   font-size: 24px;
+  @media (width<=760px) {
+    font-size: 20px;
+  }
 }
 
 .container .card {
