@@ -60,7 +60,7 @@ nav .btn-group a:hover {
 }
 
 .container {
-  height: calc(100vh - 73px);
+  height: calc(100vh - 80px);
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -100,7 +100,7 @@ nav .btn-group a:hover {
 }
 
 .container .link {
-  padding: 24px;
+  /* padding: 20px 20px; */
   @media (width<=760px) {
     width: 100%;
     padding: unset;
@@ -121,7 +121,7 @@ nav .btn-group a:hover {
   font-weight: 400;
   line-height: 25px; /* 125% */
   letter-spacing: -0.2px;
-  padding: 0px 0px 20px 0px;
+  padding: 20px;
 
   @media (width<=760px) {
     padding: 20px 12px 0px 12px;
@@ -136,6 +136,7 @@ nav .btn-group a:hover {
   font-weight: 400;
   line-height: 25px; /* 156.25% */
   letter-spacing: -0.2px;
+  padding: 20px;
   @media (width<=760px) {
     padding: 20px 12px;
     background-color: #ecf0f3;
@@ -218,4 +219,25 @@ nav .btn-group a:hover {
 }
 img {
   width: 100%;
+}
+
+footer {
+  background-color: #d9d9d9;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+footer img {
+  width: 47px;
+  height: 47px;
+}
+
+footer .logobox {
+  box-sizing: content-box;
+}
+
+footer .footer-L {
+  width: 24px;
+  height: 24px;
 }
