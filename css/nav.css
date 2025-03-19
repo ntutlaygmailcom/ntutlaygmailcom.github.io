@@ -60,7 +60,7 @@ nav .btn-group a:hover {
 }
 
 .container {
-  height: calc(100vh - 74px);
+  height: calc(100vh - 163px);
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -94,6 +94,7 @@ nav .btn-group a:hover {
   padding: 12px;
   margin-top: 14px;
   height: 99%;
+  z-index: -1;
   aspect-ratio: 16/9;
   @media (width<=760px) {
     height: 50vh;
