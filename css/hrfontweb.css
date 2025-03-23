@@ -1,0 +1,141 @@
+.hero {
+  background-image: url("../img/bgmix.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+
+  @media (width<=760px) {
+  }
+}
+
+.hero .buttonarea {
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  background: linear-gradient(
+    0deg,
+    rgba(106, 133, 182, 0.2) -30.05%,
+    rgba(186, 200, 224, 0.2) 100%
+  );
+  backdrop-filter: blur(20px);
+}
+
+.hero .buttonarea h2,
+.intro .introcontent h2 {
+  color: #3c4043;
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.hero .buttonarea p,
+.intro .introcontent .introp {
+  width: 90%;
+  margin: auto;
+  color: #3c4043;
+  font-family: Roboto;
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.hero .buttonarea .btncontainer .btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 22px;
+  border: none;
+  background: #f7f7f7;
+  cursor: pointer;
+}
+
+.intro {
+  background-image: url("../img/bgmock.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* height: 60%; */
+}
+.intro .container {
+  padding: 100px 0px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro .introcontent {
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(
+    0deg,
+    rgba(106, 133, 182, 0.2) -30.05%,
+    rgba(186, 200, 224, 0.2) 100%
+  );
+  backdrop-filter: blur(20px);
+  padding: 64px 0;
+}
+
+.intro .introcontent h2 {
+  color: #3c4043;
+
+  font-family: Roboto;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 107.692% */
+  letter-spacing: 0.32px;
+}
+
+.intro .introcontent .con {
+  width: 80%;
+  margin: auto;
+  @media (width>=760px) {
+    display: flex;
+    gap: 42px;
+  }
+}
+
+.intro .introcontent .con .introcard {
+  margin-top: 36px;
+}
+
+.intro .introcontent .con .introcard h3 {
+  color: #3c4043;
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.intro .introcontent .con .introcard p {
+  color: #3c4043;
+  font-family: Roboto;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: left;
+}
+
+.intro .transe {
+  /* backdrop-filter: blur(55px); */
+  background-image: linear-gradient(
+    to top,
+    #81b1cf 0%,
+    rgb(185, 212, 228) 50%,
+    rgba(255, 255, 255, 0.345) 80%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 279px;
+  width: 100%;
+  /* margin-top: auto; */
+}
