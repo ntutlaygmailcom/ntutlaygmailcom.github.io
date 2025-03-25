@@ -179,3 +179,55 @@
   font-weight: 400;
   line-height: 30px; /* 125% */
 }
+
+.analyse .introcard .Illustration {
+  display: flex;
+  gap: 28px;
+  padding: 24px 0;
+}
+
+.analyse .introcontent {
+  text-align: center;
+  gap: 28px;
+  padding: 24px 0;
+  background: linear-gradient(
+    0deg,
+    rgba(106, 133, 182, 0.2) -30.05%,
+    rgba(186, 200, 224, 0.2) 100%
+  );
+  backdrop-filter: blur(20px);
+}
+
+.analyse .introcontent h2 {
+  color: #3c4043;
+  font-family: Roboto;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.analyse .introcontent p {
+  color: #3c4043;
+  font-family: Roboto;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px; /* 150% */
+}
+
+.analyse .Carousel {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  padding: 42px 0;
+}
+
+.analyse .Carousel h2 {
+  color: #fff;
+  text-align: center;
+  font-family: "Noto Looped Thai UI";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px; /* 150% */
+}
