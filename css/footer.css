@@ -10,7 +10,7 @@ footer {
 
 footer img {
   width: 47px;
-  height: 47px;
+  height: 30px;
 }
 
 footer .logobox {
@@ -30,4 +30,13 @@ footer .footersvg {
 footer .line {
   color: #fff;
   width: 100%;
+  height: 1px;
+}
+.c_circal {
+  color: #fafafa;
+  font-family: "Noto Sans TC";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }

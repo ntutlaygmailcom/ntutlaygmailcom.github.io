@@ -184,6 +184,18 @@
   display: flex;
   gap: 28px;
   padding: 24px 0;
+  @media (width<=760px) {
+    width: 55%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.analyse .introcard .Illustration .pic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .analyse .introcontent {
@@ -217,8 +229,7 @@
 
 .analyse .Carousel {
   display: flex;
-  flex-direction: row;
-  gap: 100px;
+  flex-direction: column;
   padding: 42px 0;
 }
 
@@ -230,4 +241,32 @@
   font-style: normal;
   font-weight: 600;
   line-height: 42px; /* 150% */
+}
+
+.Carousel .flowswitch {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+  justify-content: center;
+}
+
+.Carousel .flow .more {
+  text-align: right;
+  padding: 24px 34px;
+}
+.Carousel .flow .more a {
+  text-decoration: none;
+  font-family: miso;
+  color: inherit;
+  font-size: 24px;
+  @media (width<=760px) {
+    font-size: 20px;
+  }
+}
+
+.Carousel .flow .flowcontainer {
+  width: 100%;
+  height: 651px;
+  background-color: #d1dde5;
+  border-radius: 20px;
 }

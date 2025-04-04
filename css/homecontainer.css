@@ -1,5 +1,5 @@
 .container {
-  height: calc(100vh - 163px);
+  height: calc(100vh - 147px);
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -158,6 +158,7 @@
   align-items: flex-start;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 img {
   width: 100%;
