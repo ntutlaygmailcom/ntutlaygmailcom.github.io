@@ -270,3 +270,71 @@
   background-color: #d1dde5;
   border-radius: 20px;
 }
+
+.mockup {
+  background-color: #81b1cf;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.mockup .mockupintro {
+  text-align: center;
+  gap: 28px;
+  padding: 24px 0;
+  background: linear-gradient(
+    0deg,
+    rgba(106, 133, 182, 0.2) -30.05%,
+    rgba(186, 200, 224, 0.2) 100%
+  );
+  backdrop-filter: blur(20px);
+  margin-bottom: 100px;
+}
+
+.mockup .mockuppic {
+  display: flex;
+  flex-direction: crow;
+  align-items: center;
+  gap: 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.mockup .mockuppic .copywritting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.mockup .mockuppic .pic {
+  position: relative;
+  width: 100vw; /* 滿版寬度，貼齊螢幕 */
+  max-width: none;
+  margin-left: 0;
+  padding-left: 0;
+  aspect-ratio: 4 / 3;
+  overflow: visible; /* 確保偏移不被裁切 */
+}
+.mockup .mockuppic .pic img {
+  position: absolute;
+  width: 60vw; /* 圖片佔視窗寬度的 60%，視需要可調整 */
+  height: auto;
+}
+
+.mockup .mockuppic .pic .a {
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.mockup .mockuppic .pic .b {
+  top: 2rem;
+  left: 2rem;
+  z-index: 2;
+}
+
+.mockup .mockuppic .pic .C {
+  top: 4rem;
+  left: 4rem;
+  z-index: 1;
+}
