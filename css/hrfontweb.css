@@ -13,6 +13,8 @@
   @media (width<=760px) {
   }
 }
+/* * {
+  outline: 1px solid rgba(60, 64, 67, 0.376); */
 
 .hero .buttonarea {
   width: 100%;
@@ -187,8 +189,7 @@
   @media (width<=760px) {
     width: 55%;
     flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
+    display: block;
   }
 }
 
@@ -276,6 +277,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
 }
 .mockup .mockupintro {
   text-align: center;
@@ -291,50 +293,93 @@
 }
 
 .mockup .mockuppic {
-  display: flex;
-  flex-direction: crow;
   align-items: center;
   gap: 2rem;
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
+  @media (width>=760px) {
+    display: flex;
+  }
 }
 .mockup .mockuppic .copywritting {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
+  width: 100%;
+  @media (width>=760px) {
+    width: 50%;
+  }
 }
 
 .mockup .mockuppic .pic {
   position: relative;
-  width: 100vw; /* 滿版寬度，貼齊螢幕 */
-  max-width: none;
-  margin-left: 0;
-  padding-left: 0;
-  aspect-ratio: 4 / 3;
-  overflow: visible; /* 確保偏移不被裁切 */
+  width: 100%;
+  height: 1250px;
+  overflow: hidden;
+  @media (width>=760px) {
+    width: 50%;
+  }
 }
-.mockup .mockuppic .pic img {
+.mockup .mockuppic .pic .pic-a,
+.mockup .mockuppic .pic .pic-b,
+.mockup .mockuppic .pic .pic-c {
   position: absolute;
-  width: 60vw; /* 圖片佔視窗寬度的 60%，視需要可調整 */
-  height: auto;
+  transition: left 0.5s ease, top 0.5s ease;
+}
+.mockup .mockuppic .pic .pic-a img,
+.mockup .mockuppic .pic .pic-b img,
+.mockup .mockuppic .pic .pic-c img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
 }
 
-.mockup .mockuppic .pic .a {
-  top: 0;
-  left: 0;
-  z-index: 3;
-}
-
-.mockup .mockuppic .pic .b {
+.mockup .mockuppic .pic .pic-a {
   top: 2rem;
   left: 2rem;
-  z-index: 2;
+}
+.mockup .mockuppic .pic .pic-a:hover {
+  top: 0;
+  left: 0;
 }
 
-.mockup .mockuppic .pic .C {
-  top: 4rem;
-  left: 4rem;
-  z-index: 1;
+.mockup .mockuppic .pic .pic-b {
+  top: 18rem;
+  left: 8rem;
+}
+.mockup .mockuppic .pic .pic-b:hover {
+  top: 16rem;
+  left: 6rem;
+}
+.mockup .mockuppic .pic .pic-c {
+  top: 34rem;
+  left: 14rem;
+}
+
+.mockup .mockuppic .pic .pic-c:hover {
+  top: 32rem;
+  left: 12rem;
+}
+
+.mockup .project-content {
+  height: 1000px;
+}
+
+.mockup .project-content .projectbtn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: sticky;
+  top: 50px;
+  width: fit-content;
+}
+
+.mockup .project-content .projectbtn-group .project-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 100%;
+  border: none;
+  text-decoration: none;
+  text-align: center;
+  line-height: 42px;
+  background-color: rgba(217, 217, 217, 0.5);
+  backdrop-filter: blur(10px);
 }
