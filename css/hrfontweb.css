@@ -295,6 +295,7 @@
 .mockup .mockuppic {
   align-items: center;
   gap: 2rem;
+  margin-bottom: 46px;
   @media (width>=760px) {
     display: flex;
   }
@@ -359,10 +360,6 @@
   left: 12rem;
 }
 
-.mockup .project-content {
-  height: 1000px;
-}
-
 .mockup .project-content .projectbtn-group {
   display: flex;
   flex-direction: column;
@@ -370,18 +367,22 @@
   position: sticky;
   top: 50px;
   width: fit-content;
+  margin-bottom: -220px;
+  margin-left: 20px;
 }
 
 .mockup .project-content .projectbtn-group .project-btn {
-  width: 42px;
-  height: 42px;
+  width: 60px;
+  height: 60px;
   border-radius: 100%;
   border: none;
   text-decoration: none;
   text-align: center;
-  line-height: 42px;
-  background-color: rgba(217, 217, 217, 0.5);
+  line-height: 60px;
+  background-color: rgba(249, 237, 237, 0.7);
   backdrop-filter: blur(10px);
+  font-size: 26px;
+  color: #3cc3bd;
 }
 
 .mockup .btn-group {
@@ -389,6 +390,19 @@
   align-items: center;
 }
 
+.project-content .mockup img {
+  margin-bottom: 2rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 36px;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .first {
   order: -1;
+}
+
+html {
+  scroll-behavior: smooth;
 }
