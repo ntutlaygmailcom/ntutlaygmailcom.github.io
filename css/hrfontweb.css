@@ -383,3 +383,12 @@
   background-color: rgba(217, 217, 217, 0.5);
   backdrop-filter: blur(10px);
 }
+
+.mockup .btn-group {
+  display: flex;
+  align-items: center;
+}
+
+.first {
+  order: -1;
+}
