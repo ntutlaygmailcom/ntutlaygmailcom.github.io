@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  background-color: #81b1cf;
+}
 
 .hero {
   background-image: url("../img/bgmix.svg");
@@ -269,24 +272,27 @@ html {
   }
 }
 
-.Carousel .flow .flowcontainer {
-  width: 100%;
-  /* height: 651px; */
-  /* background-color: #d1dde5; */
+.gray {
+  background-color: #aaa;
+}
+.swiper {
+  width: 90%;
+  height: auto;
+  background-color: #d1dde5;
+}
+
+.swichgroup {
+  background-color: #d1dde5;
+  margin: 20px 20px;
+  padding: 36px 36px;
   border-radius: 20px;
 }
 
-.flowcontainer .swiper {
-  width: 100%;
-  height: 100%;
-  /* background-color: #d1dde5; */
-}
-
-.flowcontainer .system_flow {
+.swiper-slide img {
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  /* height: 100%; */
+  object-fit: contain;
 }
 
 .flowcontainer.system {
