@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="./css/nav.css" />
     <link rel="stylesheet" href="./css/hrfontweb.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script src="./JS/hrfrontbtngroup.js" defer></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -164,14 +168,7 @@
           even automatically schedule interviews
         </p>
       </div>
-
       <div class="Carousel">
-        <div class="flowswitch">
-          <h2>System Flow</h2>
-          <h2>First login</h2>
-          <h2>Return</h2>
-        </div>
-
         <div class="flow">
           <div class="more">
             <a href="/"
@@ -190,7 +187,31 @@
               </svg>
             </a>
           </div>
-          <div class="flowcontainer"></div>
+          <div class="flowcontainer">
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </div>
+
+                <!-- <img id="system_flowimg" src="./img/flow_firstlogin.png" /> -->
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="mockup">
@@ -390,5 +411,31 @@
       </div>
       <hr class="line" />
     </footer>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        // direction: "vertical",
+        loop: true,
+        autoHeight: true,
+
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
+
+        // // Navigation arrows
+        // navigation: {
+        //   nextEl: ".swiper-button-next",
+        //   prevEl: ".swiper-button-prev",
+        // },
+
+        // // And if we need scrollbar
+        // scrollbar: {
+        //   el: ".swiper-scrollbar",
+        // },
+      });
+    </script>
   </body>
 </html>

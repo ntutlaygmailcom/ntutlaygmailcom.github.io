@@ -257,7 +257,7 @@ html {
 
 .Carousel .flow .more {
   text-align: right;
-  padding: 24px 34px;
+  padding: 14px;
 }
 .Carousel .flow .more a {
   text-decoration: none;
@@ -271,9 +271,26 @@ html {
 
 .Carousel .flow .flowcontainer {
   width: 100%;
-  height: 651px;
-  background-color: #d1dde5;
+  /* height: 651px; */
+  /* background-color: #d1dde5; */
   border-radius: 20px;
+}
+
+.flowcontainer .swiper {
+  width: 100%;
+  height: 100%;
+  /* background-color: #d1dde5; */
+}
+
+.flowcontainer .system_flow {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flowcontainer.system {
+  background-color: #d1dde5;
 }
 
 .mockup {
