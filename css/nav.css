@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Miso";
+  src: url("/font/miso.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 nav {
   background: #ecf0f3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -19,6 +26,7 @@ nav .btn-group {
   width: 90%;
   margin: auto;
   padding: 32px 0px 20px 0px;
+  font-family: "Miso";
   @media (width<=760px) {
     display: flex;
     flex-direction: column;
