@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="./css/footer.css" />
     <link
       rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="./JS/hrfrontbtngroup.js" defer></script>
@@ -111,7 +119,7 @@
           </div>
         </div>
       </div>
-      <div class="introcard">
+      <div class="introcard wow fadeInDown" data-wow-duration="2s">
         <h2>Target</h2>
         <p>
           "HR Recruitment Backend System" is a comprehensive platform
@@ -138,7 +146,7 @@
           </div>
         </div>
       </div>
-      <div class="introcard">
+      <div class="introcard wow fadeInDown" data-wow-duration="2s">
         <h2>User</h2>
         <p>
           "HR Recruitment Backend System" is a comprehensive platform
@@ -165,7 +173,7 @@
           </div>
         </div>
       </div>
-      <div class="introcontent">
+      <div class="introcontent wow fadeInDown" data-wow-duration="2s">
         <h2>HR Recruitment Website</h2>
         <p>
           "HR Recruitment Backend System" is a comprehensive platform
@@ -178,9 +186,9 @@
     </div>
 
     <div class="swichbtn">
-      <button class="btn skyblue" id="systemflow">System Flow</button>
-      <button class="btn skyblue" id="firstlogin">First login</button>
-      <button class="btn gray" id="return">Return</button>
+      <button class="btn active" id="systemflow">System Flow</button>
+      <button class="btn" id="firstlogin">First login</button>
+      <button class="btn" id="return">Return</button>
     </div>
     <div class="carousel">
       <div class="flow">
@@ -294,7 +302,9 @@
         </div>
       </div>
       <div class="btn-group">
-        <button class="btn skyblue" data-name="login">Login Signup</button>
+        <button class="btn skyblue first" data-name="login">
+          Login Signup
+        </button>
         <button class="btn gray" data-name="resume">Resume page</button>
         <button class="btn ash" data-name="interview">Int. Prog</button>
         <button class="btn pink" data-name="questionnaire">ASMT Q&A</button>
@@ -434,17 +444,31 @@
         },
       });
       const firstlogin = document.querySelector("#firstlogin");
+      const systemflow = document.querySelector("#systemflow");
+      const retr = document.querySelector("#return");
+
       firstlogin.addEventListener("click", function () {
         swiper.slideTo(1);
+        systemflow.classList.remove("active");
+        retr.classList.remove("active");
+        firstlogin.classList.add("active");
       });
-      const retr = document.querySelector("#return");
+
       retr.addEventListener("click", function () {
         swiper.slideTo(2);
+        systemflow.classList.remove("active");
+        firstlogin.classList.remove("active");
+        retr.classList.add("active");
       });
-      const systemflow = document.querySelector("#systemflow");
+
       systemflow.addEventListener("click", function () {
         swiper.slideTo(0);
+        retr.classList.remove("active");
+        firstlogin.classList.remove("active");
+        systemflow.classList.add("active");
       });
+      const wow = new WOW({});
+      wow.init();
     </script>
   </body>
 </html>
