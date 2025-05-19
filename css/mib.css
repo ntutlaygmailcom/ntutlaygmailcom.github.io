@@ -6,6 +6,10 @@ body {
   background-color: #9eded4;
 }
 
+/* * {
+  outline: 1px solid #00000030;
+} */
+
 .hero {
   display: flex;
   align-items: center;
@@ -71,4 +75,28 @@ body {
 
 .hero .purpose .btn a.active {
   background: #8cdff0;
+}
+
+.transe {
+  /* backdrop-filter: blur(55px); */
+  background-image: linear-gradient(
+    to top,
+    #9eded4 0%,
+    rgb(202 245 247) 50%,
+    rgba(255, 255, 255, 0.345) 80%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 279px;
+  width: 100%;
+  /* margin-top: auto; */
+}
+.intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }

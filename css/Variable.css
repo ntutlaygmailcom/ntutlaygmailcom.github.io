@@ -1,7 +1,6 @@
 html {
   --primaryBackground: linear-gradient(133deg, #f5f7fa 24.2%, #c3cfe2 69.65%);
   --front-1: #3c4043;
-  width: fit-content;
 }
 
 body {
