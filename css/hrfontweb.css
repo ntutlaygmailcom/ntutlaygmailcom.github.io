@@ -548,11 +548,11 @@ body {
   flex-direction: column;
   gap: 20px;
   position: sticky;
-  top: 190px;
+  top: 290px;
   width: fit-content;
-
   margin-left: 20px;
 }
+
 #aproject {
   margin-top: -220px;
 }
