@@ -92,6 +92,107 @@
       </div>
     </div>
 
+    <!-- 可展開的輪播區塊 -->
+    <div class="expandable-carousel">
+      <div class="carousel-container">
+        <h2>服務功能介紹</h2>
+        
+        <!-- 第一層：輪播項目 -->
+        <div class="carousel-items">
+          
+          <!-- 輪播項目 1 -->
+          <div class="carousel-item">
+            <div class="item-header" data-toggle="0">
+              <img src="./img/logocircal.svg" alt="Fund Management" class="item-icon">
+              <h3>基金管理</h3>
+              <span class="toggle-arrow">▼</span>
+            </div>
+            <!-- 第二層：可展開的內容 -->
+            <div class="item-content" id="content-0">
+              <div class="content-text">
+                <p>提供完整的基金投資管理功能，包括基金查詢、申購、贖回等服務。透過智能分析工具，協助您做出最佳的投資決策。</p>
+                <ul>
+                  <li>多樣化基金選擇</li>
+                  <li>即時價格查詢</li>
+                  <li>專業投資建議</li>
+                </ul>
+              </div>
+              <div class="content-image">
+                <img src="./img/mobilephone.svg" alt="基金管理介面">
+              </div>
+            </div>
+          </div>
+
+          <!-- 輪播項目 2 -->
+          <div class="carousel-item">
+            <div class="item-header" data-toggle="1">
+              <img src="./img/logocircal.svg" alt="Investment Analysis" class="item-icon">
+              <h3>投資分析</h3>
+              <span class="toggle-arrow">▼</span>
+            </div>
+            <div class="item-content" id="content-1">
+              <div class="content-text">
+                <p>運用大數據分析和AI技術，提供個人化的投資組合建議和風險評估，讓您的投資更有策略性。</p>
+                <ul>
+                  <li>風險評估報告</li>
+                  <li>投資組合優化</li>
+                  <li>市場趨勢分析</li>
+                </ul>
+              </div>
+              <div class="content-image">
+                <img src="./img/analyseimg.svg" alt="投資分析圖表">
+              </div>
+            </div>
+          </div>
+
+          <!-- 輪播項目 3 -->
+          <div class="carousel-item">
+            <div class="item-header" data-toggle="2">
+              <img src="./img/logocircal.svg" alt="Digital Banking" class="item-icon">
+              <h3>數位銀行</h3>
+              <span class="toggle-arrow">▼</span>
+            </div>
+            <div class="item-content" id="content-2">
+              <div class="content-text">
+                <p>全方位的數位銀行服務，包括轉帳、理財、貸款等功能，讓您隨時隨地享受便利的金融服務。</p>
+                <ul>
+                  <li>24小時線上服務</li>
+                  <li>安全加密技術</li>
+                  <li>多元支付方式</li>
+                </ul>
+              </div>
+              <div class="content-image">
+                <img src="./img/mobile phone.svg" alt="數位銀行功能">
+              </div>
+            </div>
+          </div>
+
+          <!-- 輪播項目 4 -->
+          <div class="carousel-item">
+            <div class="item-header" data-toggle="3">
+              <img src="./img/logocircal.svg" alt="Customer Service" class="item-icon">
+              <h3>客戶服務</h3>
+              <span class="toggle-arrow">▼</span>
+            </div>
+            <div class="item-content" id="content-3">
+              <div class="content-text">
+                <p>專業的客戶服務團隊，提供即時諮詢和問題解決方案，確保您獲得最佳的服務體驗。</p>
+                <ul>
+                  <li>24/7客服支援</li>
+                  <li>多語言服務</li>
+                  <li>快速問題解決</li>
+                </ul>
+              </div>
+              <div class="content-image">
+                <img src="./img/cover.svg" alt="客戶服務">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
     <footer>
       <div class="footersvg">
         <img src="./img/logocircal.svg" />
@@ -99,5 +200,38 @@
       </div>
       <hr class="line" />
     </footer>
+
+    <script>
+      // 可展開輪播區塊的toggle功能
+      document.addEventListener('DOMContentLoaded', function() {
+        const itemHeaders = document.querySelectorAll('.item-header');
+        
+        itemHeaders.forEach(header => {
+          header.addEventListener('click', function() {
+            const toggleId = this.getAttribute('data-toggle');
+            const content = document.getElementById(`content-${toggleId}`);
+            const arrow = this.querySelector('.toggle-arrow');
+            
+            // Toggle展開狀態
+            if (content.classList.contains('expanded')) {
+              content.classList.remove('expanded');
+              this.classList.remove('active');
+            } else {
+              // 可選：關閉其他已展開的項目（手風琴效果）
+              itemHeaders.forEach(otherHeader => {
+                const otherToggleId = otherHeader.getAttribute('data-toggle');
+                const otherContent = document.getElementById(`content-${otherToggleId}`);
+                otherContent.classList.remove('expanded');
+                otherHeader.classList.remove('active');
+              });
+              
+              // 展開當前項目
+              content.classList.add('expanded');
+              this.classList.add('active');
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>

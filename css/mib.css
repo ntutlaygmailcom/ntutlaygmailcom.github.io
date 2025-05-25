@@ -144,3 +144,148 @@ body {
     transform: translateY(0%); /* 原本 4 個項目 * 每個 50px */
   }
 }
+
+/* 可展開輪播區塊樣式 */
+.expandable-carousel {
+  background-color: #9eded4;
+  padding: 60px 20px;
+}
+
+.carousel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carousel-container h2 {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.carousel-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+@media (width <= 760px) {
+  .carousel-items {
+    grid-template-columns: 1fr;
+  }
+}
+
+.carousel-item {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carousel-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+.item-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
+  background: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.item-header:hover {
+  background-color: #f8f9fa;
+}
+
+.item-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.item-header h3 {
+  color: #333;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.toggle-arrow {
+  color: #8cdff0;
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+  margin-left: auto;
+}
+
+.item-header.active .toggle-arrow {
+  transform: rotate(180deg);
+}
+
+.item-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out, padding 0.4s ease-out;
+  background: #fff;
+}
+
+.item-content.expanded {
+  max-height: 600px;
+  padding: 0 20px 20px 20px;
+}
+
+.item-content .content-text {
+  margin-bottom: 20px;
+}
+
+.item-content .content-text p {
+  color: #666;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.item-content .content-text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item-content .content-text li {
+  color: #666;
+  font-family: Roboto;
+  font-size: 14px;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.item-content .content-text li::before {
+  content: "•";
+  color: #8cdff0;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.content-image {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.content-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
