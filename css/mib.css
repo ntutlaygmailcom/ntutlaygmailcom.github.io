@@ -93,10 +93,54 @@ body {
   height: 279px;
   width: 100%;
   /* margin-top: auto; */
+  margin-top: 20px;
 }
+
 .intro {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.motion {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+}
+
+.motion .mobile {
+  width: 33.33%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.motion .mobile img {
+  width: 100%;
+}
+
+.scrolling {
+  animation: scrollUp 10s linear infinite;
+}
+
+.scrolling_down {
+  animation: scrolldown 10s linear infinite;
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%); /* 原本 4 個項目 * 每個 50px */
+  }
+}
+
+@keyframes scrolldown {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0%); /* 原本 4 個項目 * 每個 50px */
+  }
 }
