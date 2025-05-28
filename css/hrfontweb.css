@@ -15,13 +15,14 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 60%;
+  height: 92%;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: flex-end;
   align-items: center;
   @media (width<=760px) {
+    height: 86%;
   }
 }
 

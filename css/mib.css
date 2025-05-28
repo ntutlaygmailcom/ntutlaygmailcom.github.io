@@ -5,8 +5,8 @@ html {
 body {
   background-color: #9eded4;
 }
-
-/* * {
+/* 
+* {
   outline: 1px solid #00000030;
 } */
 
@@ -34,6 +34,16 @@ body {
   width: 80%;
   margin: auto;
   margin-bottom: 20px;
+  @media (width<=760px) {
+    color: #f4f8fa;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 12px;
+    margin-top: 20px;
+  }
 }
 
 .hero .purpose p {
@@ -46,6 +56,17 @@ body {
   width: 80%;
   margin: auto;
   margin-bottom: 20px;
+  @media (width<=760px) {
+    color: #fff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
 }
 
 .hero .purpose .btn {
@@ -76,24 +97,16 @@ body {
 .hero .purpose .btn a.active {
   background: #8cdff0;
 }
-
 .transe {
-  /* backdrop-filter: blur(55px); */
+  position: relative;
+  top: -100px;
   background-image: linear-gradient(
     to top,
-    #9eded4 0%,
-    rgb(202 245 247) 50%,
-    rgba(255, 255, 255, 0.345) 80%,
-    rgba(255, 255, 255, 0) 100%
+    transparent 0%,
+    #c0ded9 50%,
+    transparent 100%
   );
-
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 279px;
-  width: 100%;
-  /* margin-top: auto; */
-  margin-top: 20px;
+  height: 200px;
 }
 
 .intro {
@@ -104,7 +117,6 @@ body {
 }
 
 .motion {
-  margin-top: 24px;
   display: flex;
   gap: 12px;
 }
