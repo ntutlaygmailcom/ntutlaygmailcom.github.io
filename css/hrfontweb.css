@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Miso";
+  src: url("/font/miso.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 html {
   scroll-behavior: smooth;
   font-family: Roboto, sans-serif;
@@ -22,7 +30,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   @media (width<=760px) {
-    height: 86%;
+    height: 82%;
   }
 }
 
@@ -213,11 +221,10 @@ body {
 .analyse .introcard p {
   color: #fff;
   text-align: center;
-  font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 125% */
+  line-height: 30px;
 }
 
 .analyse .introcard .Illustration {
