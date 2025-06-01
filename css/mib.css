@@ -107,13 +107,7 @@ body {
     transparent 100%
   );
   height: 200px;
-}
-
-.intro {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  z-index: 1;
 }
 
 .motion {
@@ -155,4 +149,59 @@ body {
   100% {
     transform: translateY(0%); /* 原本 4 個項目 * 每個 50px */
   }
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-image: url("../img/subscrptionbg.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  top: -200px;
+
+  @media (width<=760px) {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.intro .copywrite {
+  margin-left: 80px;
+  margin-right: 80px;
+  text-align: center;
+  @media (width<=760px) {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+  }
+}
+
+.intro .copywrite h1 {
+  color: #22615e;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.intro .copywrite p {
+  color: #22615e;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 25px; /* 125% */
+  letter-spacing: -0.2px;
+}
+
+.intro .picture img {
+  width: 100%;
 }
