@@ -23,7 +23,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 92%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -91,7 +91,7 @@ body {
 }
 
 .intro .container {
-  padding: 100px 0px;
+  padding: 310px 0px;
   display: flex;
   flex-direction: column;
   align-content: center;
