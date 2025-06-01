@@ -8,7 +8,7 @@ body {
 /* 
 * {
   outline: 1px solid #00000030;
-} */
+} * */
 
 .hero {
   display: flex;
@@ -204,4 +204,9 @@ body {
 
 .intro .picture img {
   width: 100%;
+}
+
+.tocontentbtn {
+  background-color: ＃9FDED4;
+  height: 100px;
 }
