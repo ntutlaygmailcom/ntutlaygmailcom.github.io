@@ -320,3 +320,128 @@ body {
     gap: 48px;
   }
 }
+
+.solution {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+}
+
+.solution h1 {
+  color: #000;
+  text-align: center;
+  font-size: 140px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.solution p {
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.solution .verticalarea {
+  width: 10%;
+  padding: 40px 0;
+  background-color: #fff;
+  box-shadow: 39px 14px 40px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  @media (width<=760px) {
+    width: 20%;
+  }
+}
+
+.solution .ver {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.solution .ver .circle {
+  width: 180px;
+  height: 180px;
+  background-color: #3498db;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 30px;
+  @media (width<=760px) {
+    width: 68px;
+    height: 68px;
+    background-color: #3498db;
+    border-radius: 50%;
+  }
+}
+
+.solution .ver .circleb {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 20px;
+  left: 10px;
+  @media (width<=760px) {
+    width: 68px;
+    height: 68px;
+    background-color: #3498db;
+    border-radius: 50%;
+  }
+}
+
+.solution .ver .circlec {
+  width: 180px;
+  height: 180px;
+  background-color: #3498db;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 20px;
+  left: 10px;
+  @media (width<=760px) {
+    width: 68px;
+    height: 68px;
+    background-color: #3498db;
+    border-radius: 50%;
+  }
+}
+
+.solution .ver .circled {
+  width: 200px;
+  height: 200px;
+  background-color: #3498db;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 20px;
+  left: 10px;
+  @media (width<=760px) {
+    width: 68px;
+    height: 68px;
+    background-color: #3498db;
+    border-radius: 50%;
+  }
+}
+.solution .horizontalcontent {
+  width: 20%;
+}
