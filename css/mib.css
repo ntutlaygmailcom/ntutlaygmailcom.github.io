@@ -22,9 +22,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 90vh;
   @media (width<=760px) {
-    height: 50vh;
+    height: 100vh;
   }
 }
 
@@ -44,7 +44,7 @@ body {
   @media (width<=760px) {
     color: #f4f8fa;
     font-family: Roboto;
-    font-size: 24px;
+    font-size: 44px;
     font-weight: 700;
     width: 80%;
     margin: auto;
@@ -135,7 +135,6 @@ body {
 .motion .only-mobile {
   display: block;
   @media (width>=760px) {
-    display: none;
   }
 }
 
