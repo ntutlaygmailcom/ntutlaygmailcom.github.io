@@ -14,6 +14,7 @@ body {
   display: flex;
   align-items: center;
   background-color: #9eded4;
+  /* min-height: 90vh; */
 }
 
 .hero .motion {
@@ -21,10 +22,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 70vh;
+  @media (width<=760px) {
+    height: 50vh;
+  }
 }
 
 .hero .purpose {
   width: 50%;
+  padding: 70px 0;
 }
 
 .hero .purpose h1 {
@@ -118,8 +124,19 @@ body {
 
 .motion .mobile {
   width: 33.33%;
-  height: 400px;
+  height: 100%;
   overflow: hidden;
+  @media (width<=760px) {
+    display: none;
+    width: 50%;
+  }
+}
+
+.motion .only-mobile {
+  display: block;
+  @media (width>=760px) {
+    display: none;
+  }
 }
 
 .motion .mobile img {
