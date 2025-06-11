@@ -30,7 +30,6 @@ body {
 
 .hero .purpose {
   width: 50%;
-  padding: 70px 0;
 }
 
 .hero .purpose h1 {
@@ -275,46 +274,74 @@ body {
 
 .mainintro .introdution .introimgcontener {
   display: flex;
-  flex-direction: row;
-  width: 100%;
+  flex-wrap: wrap row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 120px;
+
   @media (width<=760px) {
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    gap: 160px;
+    padding-top: 200px;
   }
 }
 
 .introimgcontener .dialogbox {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.introimgcontener .demoimg {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.dialogbox .dialog {
-  width: 30%;
-}
-.dialogbox .demo {
   width: 70%;
-}
-.demoimg .dialog {
-  width: 58%;
+  position: relative;
   @media (width<=760px) {
-    width: 53%;
+    width: 90%;
   }
 }
 
-.demoimg .demo {
-  width: 58%;
+.tooltip::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/dialogarc.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 83px;
+  height: 35px;
+  top: 91%;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.introimgcontener .demoimg {
+  width: 18%;
+  position: relative;
+  @media (width<=760px) {
+    width: 50%;
+  }
+}
+
+.introimgcontener .tooltip {
+  position: absolute;
+  background-color: #fff;
+  width: 80%;
+  left: 0;
+  right: 0;
+  bottom: 115%;
+  padding: 20px 20px;
+  border-radius: 10px;
+  margin: auto;
+  text-wrap: wrap;
+  @media (width<=760px) {
+    bottom: 125%;
+  }
+}
+
+.phone.phone {
+  bottom: 115%;
+}
+
+.introimgcontener .dialogbox img {
+  width: 100%;
+}
+
+.introimgcontener .demoimg img {
+  width: 100%;
 }
 
 .mainintro .problems {
@@ -460,4 +487,62 @@ body {
 }
 .solution .horizontalcontent {
   width: 20%;
+}
+
+.problems .switch {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* gap: 20px; */
+  width: 100%;
+  /* background-color: blueviolet; */
+}
+
+.problems .switch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+}
+
+.problems .switch .content {
+  width: 94%;
+  background-color: #6bb3af;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.problems .switch .tagglearea {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: 100%;
+  background: #f7f7f7;
+  box-shadow: 12px 12px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.tagglearea .per-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.switch .contantfooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 94%;
+  height: 40px;
+  background-color: #6bb3af;
+  border-radius: 0px 0px 20px 20px;
+  padding: 60px 0 10px 0;
+}
+
+.tagglebtn {
+  position: relative;
+  top: 20px;
+  border: none;
+  background-color: unset;
 }

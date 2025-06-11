@@ -28,7 +28,7 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script> -->
     <link href="https://fonts.cdnfonts.com/css/miso" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -493,6 +493,20 @@
         retr.classList.remove("active");
         firstlogin.classList.remove("active");
         systemflow.classList.add("active");
+      });
+      swiper.on("slideChange", function () {
+        const activeIndex = swiper.activeIndex;
+        retr.classList.remove("active");
+        firstlogin.classList.remove("active");
+        systemflow.classList.remove("active");
+
+        if (activeIndex === 0) {
+          systemflow.classList.add("active");
+        } else if (activeIndex === 1) {
+          firstlogin.classList.add("active");
+        } else if (activeIndex === 2) {
+          retr.classList.add("active");
+        }
       });
       const wow = new WOW({});
       wow.init();

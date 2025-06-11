@@ -20,6 +20,7 @@
       src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"
       defer
     ></script>
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -115,13 +116,13 @@
         </p>
 
         <div class="introimgcontener">
-          <div class="dialogbox">
-            <img src="./img/dialog-a.svg" alt="" class="dialog" />
-            <img src="./img/pc.svg" alt="" class="demo" />
-          </div>
           <div class="demoimg">
-            <img src="./img/dialog-a.svg" alt="" class="dialog" />
+            <div class="tooltip phone">ha hahahahaha hahahaha hahahahahaha</div>
             <img src="./img/mobile.svg" alt="" class="demo" />
+          </div>
+          <div class="dialogbox">
+            <div class="tooltip">hahahahahah ahahahahah hahahahahahaha</div>
+            <img src="./img/pc.svg" alt="" class="demo" />
           </div>
         </div>
       </div>
@@ -157,7 +158,66 @@
           Fund Subscription Fund Subscription Fund Subscription
         </p>
 
-        <div class="switch">switcswitcswitcswitcswitcswitc</div>
+        <div class="switch">
+          <div class="content">
+            <p>他就是內文</p>
+            <p>他就是內文</p>
+            <p>他就是內文</p>
+            <p>他就是內文</p>
+          </div>
+          <div class="tagglearea">
+            <div class="per-content">
+              <p>AAAAAAAAAAAAAAAA可以展開收合 AAAAAAAAAAAAAAAA可以展開收合</p>
+              <img src="./img/colume.svg" alt="" />
+            </div>
+            <button class="tagglebtn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="53"
+                height="54"
+                viewBox="0 0 53 54"
+                fill="none"
+              >
+                <circle cx="26.5" cy="26.7852" r="26.5" fill="#D9D9D9" />
+                <path
+                  d="M25.8005 32.4934L17.7898 24.4266C17.4034 24.0376 17.4034 23.4068 17.7898 23.0178L18.7241 22.0769C19.1098 21.6885 19.7349 21.6878 20.1215 22.0753L26.5 28.4683L32.8785 22.0753C33.2651 21.6878 33.8902 21.6885 34.2759 22.0769L35.2102 23.0178C35.5966 23.4068 35.5966 24.0376 35.2102 24.4266L27.1996 32.4934C26.8132 32.8824 26.1868 32.8824 25.8005 32.4934Z"
+                  fill="#4C9A9B"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="contantfooter">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="76"
+              height="14"
+              viewBox="0 0 76 14"
+              fill="none"
+            >
+              <circle
+                cx="6.5"
+                cy="6.5"
+                r="6.5"
+                transform="matrix(1 0 0 -1 0 13.2852)"
+                fill="white"
+              />
+              <circle
+                cx="6.5"
+                cy="6.5"
+                r="6.5"
+                transform="matrix(1 0 0 -1 31.4512 13.2852)"
+                fill="white"
+              />
+              <circle
+                cx="6.5"
+                cy="6.5"
+                r="6.5"
+                transform="matrix(1 0 0 -1 62.9023 13.2852)"
+                fill="white"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
     <div class="solution">
@@ -202,5 +262,43 @@
       </div>
       <hr class="line" />
     </footer>
+    <script type="module">
+      import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+
+      const swiper = new Swiper(".swiper", {
+        autoHeight: true,
+        // loop: true, // 循環播放
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true, // 點擊分頁可切換
+        },
+      });
+      const firstlogin = document.querySelector("#firstlogin");
+      const systemflow = document.querySelector("#systemflow");
+      const retr = document.querySelector("#return");
+
+      firstlogin.addEventListener("click", function () {
+        swiper.slideTo(1);
+        systemflow.classList.remove("active");
+        retr.classList.remove("active");
+        firstlogin.classList.add("active");
+      });
+
+      retr.addEventListener("click", function () {
+        swiper.slideTo(2);
+        systemflow.classList.remove("active");
+        firstlogin.classList.remove("active");
+        retr.classList.add("active");
+      });
+
+      systemflow.addEventListener("click", function () {
+        swiper.slideTo(0);
+        retr.classList.remove("active");
+        firstlogin.classList.remove("active");
+        systemflow.classList.add("active");
+      });
+      const wow = new WOW({});
+      wow.init();
+    </script>
   </body>
 </html>
