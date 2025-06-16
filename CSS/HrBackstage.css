@@ -133,7 +133,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 0px;
 }
 
 .hrsolutionintro .titlearea {
@@ -190,16 +190,17 @@ body {
 
 .c_circal {
   display: inline-block;
-  width: 14px;
-  height: 14px;
+  width: 8px;
+  height: 8px;
+  padding: 4px;
   background-color: #f9fcfa;
   border-radius: 100%;
 }
 
 .c_circal span {
   display: inline-block;
-  width: 6px;
-  height: 6px;
+  width: 100%;
+  height: 100%;
   background-color: #abadac;
   border-radius: 100%;
 }
