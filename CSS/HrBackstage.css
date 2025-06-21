@@ -9,6 +9,7 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   background: rgba(255, 255, 255, 0.37);
+  height: 60%;
 }
 
 .welcome h1 {
@@ -47,6 +48,7 @@ body {
 .people .hrimg {
   width: 100%;
   height: 50%;
+  padding-top: 50px;
 }
 
 .welcome .culume {
@@ -54,9 +56,17 @@ body {
 }
 
 .culume .hrculume {
-  height: 72%;
+  height: 100%;
   width: 100%;
+  position: relative;
+  top: -20px;
   /* aspect-ratio: 1 / 1; */
+  @media (width<=760px) {
+    position: relative;
+    top: -42px;
+    width: 90%;
+    
+  }
 }
 
 .intro {
@@ -146,7 +156,7 @@ body {
 }
 
 .solutioncontent {
-  padding: 0 0 0 70px;
+  /* padding: 0 0 0 70px; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -162,6 +172,7 @@ body {
 
 .solutionflow {
   padding-left: 70px;
+  margin-top: 163px;
 
   @media (width<=760px) {
   }

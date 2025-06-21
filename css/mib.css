@@ -355,6 +355,8 @@ body {
 }
 
 .mainintro .problems .analysisimg {
+  display: flex;
+  flex-direction: row;
   @media (width<=760px) {
     display: flex;
     flex-direction: column;
@@ -362,6 +364,10 @@ body {
     align-items: center;
     gap: 48px;
   }
+}
+
+.analysis_img {
+  width: 100%;
 }
 
 .solution {
@@ -373,19 +379,24 @@ body {
 .solution h1 {
   color: #000;
   text-align: center;
-  font-size: 140px;
+  font-size: 120px;
   font-style: normal;
   font-weight: 500;
-  line-height: normal;
+  @media (width<=760px) {
+    font-size: 56px;
+  }
 }
 
 .solution p {
   color: #000;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  @media (width<=760px) {
+    font-size: 17px;
+  }
 }
 
 .solution .verticalarea {
@@ -417,32 +428,33 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  left: 30px;
+  left: 40px;
   @media (width<=760px) {
-    width: 68px;
-    height: 68px;
+    width: 100px;
+    height: 100px;
     background-color: #3498db;
     border-radius: 50%;
+    left: 20px;
   }
 }
 
 .solution .ver .circleb {
-  width: 100px;
-  height: 100px;
-  background-color: #3498db;
+  width: 180px;
+  height: 180px;
+  background-color: #00acc1;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
-  right: 20px;
-  left: 10px;
+  left: 40px;
   @media (width<=760px) {
-    width: 68px;
-    height: 68px;
-    background-color: #3498db;
+    width: 100px;
+    height: 100px;
+    background-color: #00acc1;
     border-radius: 50%;
+    left: 20px;
   }
 }
 
@@ -466,7 +478,7 @@ body {
   }
 }
 
-.solution .ver .circled {
+.solution .ver .circle_d {
   width: 200px;
   height: 200px;
   background-color: #3498db;
@@ -483,8 +495,32 @@ body {
     height: 68px;
     background-color: #3498db;
     border-radius: 50%;
+    right: 20px;
+    left: 10px;
   }
 }
+
+.circle_title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  right: 18%;
+  @media (width<=760px) {
+    right: 19%;
+  }
+}
+
+.circle_title_b {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 40px;
+  right: 18%;
+  @media (width<=760px) {
+    right: 19%;
+  }
+}
+
 .solution .horizontalcontent {
   width: 20%;
 }
@@ -550,7 +586,7 @@ body {
 
 .swiper-container {
   width: 100%;
-  max-width: 800px;
+  max-width: 70%;
   margin: 0 auto;
   height: auto;
   overflow: hidden; /* 確保不會顯示其他投影片 */
