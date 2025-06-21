@@ -357,6 +357,7 @@ body {
 .mainintro .problems .analysisimg {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   @media (width<=760px) {
     display: flex;
     flex-direction: column;
@@ -405,6 +406,9 @@ body {
   background-color: #fff;
   box-shadow: 39px 14px 40px 0px rgba(0, 0, 0, 0.25);
   overflow: hidden;
+  @media (width<=960px) {
+    width: 20%;
+  }
   @media (width<=760px) {
     width: 20%;
   }
@@ -438,7 +442,7 @@ body {
   }
 }
 
-.solution .ver .circleb {
+.solution .ver .circle_b {
   width: 180px;
   height: 180px;
   background-color: #00acc1;
@@ -452,13 +456,12 @@ body {
   @media (width<=760px) {
     width: 100px;
     height: 100px;
-    background-color: #00acc1;
     border-radius: 50%;
     left: 20px;
   }
 }
 
-.solution .ver .circlec {
+.solution .ver .circle_c {
   width: 180px;
   height: 180px;
   background-color: #3498db;
@@ -468,19 +471,18 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  right: 20px;
-  left: 10px;
+  left: 40px;
   @media (width<=760px) {
-    width: 68px;
-    height: 68px;
-    background-color: #3498db;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
+    left: 20px;
   }
 }
 
 .solution .ver .circle_d {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   background-color: #3498db;
   border-radius: 50%;
   display: flex;
@@ -488,15 +490,13 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  right: 20px;
-  left: 10px;
+  left: 40px;
   @media (width<=760px) {
-    width: 68px;
-    height: 68px;
+    width: 100px;
+    height: 100px;
     background-color: #3498db;
     border-radius: 50%;
-    right: 20px;
-    left: 10px;
+    left: 20px;
   }
 }
 
@@ -514,7 +514,18 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: 40px;
+  top: 30px;
+  right: 18%;
+  @media (width<=760px) {
+    right: 19%;
+  }
+}
+
+.circle_title_d {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 30px;
   right: 18%;
   @media (width<=760px) {
     right: 19%;
