@@ -95,8 +95,13 @@ body {
   text-align: center;
   padding: 20px 0;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  @media (width<=1021px) {
+    width: 100%;
+    padding: 20px 12px;
+  }
   @media (width<=760px) {
     width: 100%;
+    padding: 20px 12px;
   }
 }
 
@@ -406,6 +411,8 @@ body {
   background-color: #fff;
   box-shadow: 39px 14px 40px 0px rgba(0, 0, 0, 0.25);
   overflow: hidden;
+  position: relative;
+  z-index: 1;
   @media (width<=960px) {
     width: 20%;
   }
@@ -483,7 +490,7 @@ body {
 .solution .ver .circle_d {
   width: 180px;
   height: 180px;
-  background-color: #3498db;
+  background-color: #00acc1;
   border-radius: 50%;
   display: flex;
   flex-direction: column;
@@ -494,7 +501,7 @@ body {
   @media (width<=760px) {
     width: 100px;
     height: 100px;
-    background-color: #3498db;
+    background-color: #00acc1;
     border-radius: 50%;
     left: 20px;
   }
@@ -530,10 +537,6 @@ body {
   @media (width<=760px) {
     right: 19%;
   }
-}
-
-.solution .horizontalcontent {
-  width: 20%;
 }
 
 .problems .switch {
@@ -721,7 +724,7 @@ body {
 }
 
 .tagglebtn:hover {
-  opacity: 0.8;
+  transform: scale(1.1);
 }
 
 /* Custom Swiper Pagination */
@@ -767,14 +770,13 @@ body {
   width: 100%;
 }
 
-/* 響應式設計 */
 @media (max-width: 768px) {
   .problems .switch .content {
-    width: 98%;
+    width: 70%;
   }
 
   .switch .contantfooter {
-    width: 98%;
+    width: 90%;
   }
 }
 
@@ -793,4 +795,24 @@ body {
   height: 100%;
   background-color: #81c090;
   border-radius: 100%;
+}
+
+.solution .horizontalcontent {
+  width: 80%;
+}
+
+.horizontalcontent .hor.hor_top {
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 200px;
+  border-radius: 0 20px 20px 0;
+  margin: 250px 20px 390px 0;
+}
+
+.horizontalcontent .hor {
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 200px;
+  border-radius: 0 20px 20px 0;
+  margin: 60px 20px 400px 0;
 }

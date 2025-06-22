@@ -3,6 +3,7 @@ body {
   color: var(--primary-color);
   background-image: linear-gradient(133deg, #f5f7fa 24.2%, #c3cfe2 69.65%);
   background-repeat: no-repeat;
+  scroll-behavior: smooth;
 }
 .welcome {
   display: flex;
@@ -65,7 +66,6 @@ body {
     position: relative;
     top: -42px;
     width: 90%;
-    
   }
 }
 
@@ -155,6 +155,10 @@ body {
   gap: 20px;
 }
 
+.solutionout {
+  margin-top: 200px;
+}
+
 .solutioncontent {
   /* padding: 0 0 0 70px; */
   display: grid;
@@ -195,6 +199,7 @@ body {
   margin-bottom: -320px;
   position: sticky;
   top: 200px;
+  left: 8px;
 }
 
 .Anchorpoint .pointer {
@@ -223,6 +228,26 @@ body {
   );
   border-radius: 100px;
   padding: 2px;
+}
+
+.judgepoint {
+  background-image: conic-gradient(
+    from 0turn,
+    #00a09b 0turn,
+    #00a09b calc(var(--progress_2) * 1turn),
+    transparent calc(var(--progress_2) * 1turn),
+    transparent 1turn
+  );
+}
+
+.headpoint {
+  background-image: conic-gradient(
+    from 0turn,
+    #00a09b 0turn,
+    #00a09b calc(var(--progress_3) * 1turn),
+    transparent calc(var(--progress_3) * 1turn),
+    transparent 1turn
+  );
 }
 
 .c_circal {

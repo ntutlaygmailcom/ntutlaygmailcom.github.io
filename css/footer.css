@@ -4,8 +4,8 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   padding: 12px 12px;
+  position: relative;
   z-index: 2;
-  /* width: 100%; */
 }
 
 footer img {

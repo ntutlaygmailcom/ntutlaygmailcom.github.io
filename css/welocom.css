@@ -19,6 +19,7 @@ body {
   color: inherit;
   text-decoration: none;
 }
+
 .BTcotaner {
   color: #403f3f;
   position: fixed;
@@ -39,9 +40,19 @@ body {
 
   transition: background ease 0.5s, color ease 0.5s;
 }
-
+.onlyhover {
+  display: none;
+}
 .BTcotaner:hover {
   background: rgba(35, 35, 35, 0.5);
   backdrop-filter: blur(8px);
   color: #fff;
+}
+
+.BTcotaner:hover .onlyview {
+  display: none;
+}
+
+.BTcotaner:hover .onlyhover {
+  display: block;
 }
