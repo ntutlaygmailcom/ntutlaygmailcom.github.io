@@ -1,5 +1,13 @@
+@font-face {
+  font-family: "Miso";
+  src: url("/font/miso.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 .container {
-  height: calc(100vh - 147px);
+  height: calc(100vh - 149px);
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -159,6 +167,9 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   margin-top: 20px;
+}
+
+.allcontent {
 }
 img {
   width: 100%;

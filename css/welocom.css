@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "PostNoBillsColombo-SemiBold";
+  src: url("/font/PostNoBillsColombo-SemiBold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   overflow: hidden;
   margin: 0;
@@ -10,7 +18,7 @@ body {
 }
 .wellcomBT {
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: "PostNoBillsColombo-SemiBold";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -31,22 +39,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(
-    270deg,
-    rgba(172, 203, 238, 0.8) 0.05%,
-    rgba(245, 247, 230, 0.8) 49.67%,
-    rgba(231, 240, 253, 0.8) 99.96%
-  );
-
+  border-radius: 100px;
   transition: background ease 0.5s, color ease 0.5s;
 }
 .onlyhover {
   display: none;
 }
 .BTcotaner:hover {
-  background: rgba(35, 35, 35, 0.5);
+  /* background: rgba(35, 35, 35, 0.5); */
   backdrop-filter: blur(8px);
-  color: #fff;
+  color: #959292;
 }
 
 .BTcotaner:hover .onlyview {
