@@ -1,0 +1,180 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, initial-scale=1.0, maximum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Pei Protfolio</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/mibdesigngline.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/variable.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"
+      defer
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <link href="https://fonts.cdnfonts.com/css/miso" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="hatch"></div>
+      <div class="btn-group">
+        <div class="logo">logo</div>
+        <div class="btn-groupnologo">
+          <a class="activepage" href="/designpage.html">Project</a>
+          <a href="">Research</a>
+          <a href="">About</a>
+        </div>
+      </div>
+    </nav>
+    <div class="hero">
+      <div class="purpose">
+        <h1>Digital Banking</h1>
+        <p>
+          Seamless cross-device integration for a consistent and user-friendly
+          online banking experience.
+        </p>
+        <div class="btn">
+          <a href="/mibtravel.htm">Travel Insurance</a>
+          <a href="/mib.html">Fund Subscription</a>
+          <a href="/mibdesigngline.html" class="active">Design guideline</a>
+          <a href="/mibusertest.html">User Test</a>
+        </div>
+      </div>
+      <div class="motion">
+        <div class="mobile only-mobile">
+          <img src="./img/mobilephone.svg" alt="" class="scrolling" />
+        </div>
+        <div class="mobile only-mobile">
+          <img src="./img/mobilephone.svg" alt="" class="scrolling_down" />
+        </div>
+        <div class="mobile">
+          <img src="./img/mobilephone.svg" alt="" class="scrolling" />
+        </div>
+      </div>
+    </div>
+
+    <div class="transe"></div>
+    <div class="intro">
+      <div class="copywrite">
+        <h1>Fund Subscription</h1>
+        <p>-"HR Recruitment Backend System"-</p>
+        <p>-"HR Recruitment Backend System"-</p>
+        <p>-"HR Recruitment Backend System"-</p>
+        <p>-"HR Recruitment Backend System"-</p>
+      </div>
+      <div class="picture">
+        <img src="./img/mibsubscription.svg" />
+      </div>
+    </div>
+    <div class="tocontentbtn">
+      <a href="" class="wow bounceInRight" data-wow-duration="1s"
+        ><img src="./img/tocontent.svg"
+      /></a>
+    </div>
+
+    <footer>
+      <div class="footersvg">
+        <img src="./img/logocircal.svg" />
+        <img class="footer-L" src="./img/linked.svg" />
+      </div>
+      <hr class="line" />
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+
+    <script>
+      // 初始化 Swiper
+      const swiper = new Swiper(".swiper-container", {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        speed: 500,
+        effect: "slide",
+
+        // Pagination 設定 - 修復分頁器
+        pagination: {
+          el: ".contantfooter",
+          type: "bullets",
+          clickable: false,
+          dynamicBullets: false,
+          renderBullet: function (index, className) {
+            return (
+              '<span class="' +
+              className +
+              '" data-slide="' +
+              index +
+              '"></span>'
+            );
+          },
+        },
+      });
+
+      // 展開收合功能
+      document.addEventListener("DOMContentLoaded", function () {
+        const toggleButtons = document.querySelectorAll(".tagglebtn");
+
+        toggleButtons.forEach((button) => {
+          button.addEventListener("click", function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            const taggleArea = this.closest(".tagglearea");
+            const isExpanded = taggleArea.classList.contains("expanded");
+
+            if (isExpanded) {
+              taggleArea.classList.remove("expanded");
+              this.classList.remove("rotated");
+            } else {
+              taggleArea.classList.add("expanded");
+              this.classList.add("rotated");
+            }
+          });
+        });
+      });
+
+      // 防止展開收合區域影響 swiper 滑動，但允許按鈕點擊
+      document.querySelectorAll(".tagglearea").forEach((area) => {
+        area.addEventListener("touchstart", function (e) {
+          // 如果點擊的是展開收合按鈕，不阻止事件
+          if (e.target.closest(".tagglebtn")) {
+            return;
+          }
+          e.stopPropagation();
+        });
+
+        area.addEventListener("touchmove", function (e) {
+          // 如果是在按鈕區域，不阻止事件
+          if (e.target.closest(".tagglebtn")) {
+            return;
+          }
+          e.stopPropagation();
+        });
+      });
+    </script>
+  </body>
+</html>
