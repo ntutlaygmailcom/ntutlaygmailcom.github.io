@@ -51,7 +51,7 @@ body {
   color: #3c4043;
   font-family: Roboto;
   font-size: 26px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 2;
 }
 
@@ -140,8 +140,10 @@ body {
 
 .intro .introcontent .con .introcard {
   margin-top: 20px;
+  text-align: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .intro .introcontent .con .introcard h3 {
@@ -212,7 +214,7 @@ body {
 .analyse .introcard h2 {
   color: #fff;
   text-align: center;
-  font-family: Inter;
+  font-family: roboto;
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
@@ -230,8 +232,21 @@ body {
 
 .analyse .introcard .Illustration {
   display: flex;
-  gap: 28px;
+  gap: 118px;
   padding: 24px 0;
+
+  @media (width<=760px) {
+    width: 55%;
+    flex-wrap: wrap;
+    display: block;
+  }
+}
+
+.analyse .introcard .Illustration.ma {
+  display: flex;
+  gap: 60px;
+  padding: 24px 0;
+
   @media (width<=760px) {
     width: 55%;
     flex-wrap: wrap;
@@ -243,6 +258,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
+  @media (width<=760px) {
+    padding-bottom: 36px;
+  }
 }
 
 .introcontener {
@@ -285,8 +304,8 @@ body {
 .introcontent h2 {
   color: #3c4043;
   font-family: Roboto;
-  font-size: 26px;
-  font-weight: 500;
+  font-size: 36px;
+  font-weight: 700;
   line-height: 2;
 }
 
@@ -315,6 +334,18 @@ body {
   font-weight: 400;
   line-height: 36px; /* 150% */
   width: 60%;
+}
+
+.userflow {
+  display: flex;
+  gap: 20px;
+  @media (width<=760px) {
+    flex-direction: column;
+  }
+}
+
+.userflowimg {
+  width: 100%;
 }
 
 .analyse .carousel {
@@ -418,7 +449,7 @@ body {
 }
 
 .mockup {
-  background-color: #81b1cf;
+  /* background-color: #d0edff; */
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -455,7 +486,7 @@ body {
   color: #3c4043;
   font-family: Roboto;
   font-size: 26px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 2;
 }
 
@@ -614,7 +645,7 @@ body {
   background-color: #d0edff;
 }
 .gray {
-  background-color: #8096a3;
+  background-color: #a4d2ef;
 }
 .ash {
   background-color: #afc4d1;
@@ -625,8 +656,14 @@ body {
 
 .projects {
   margin-bottom: 300px;
+  /* background-color: aqua; */
 }
-
+.project-content {
+  /* background-color: #d0edff; */
+  /* border-radius: 20px; */
+  /* padding: 60px 0; */
+  /* margin: 60px 0px; */
+}
 .project-content .mockup img {
   margin-bottom: 2rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
