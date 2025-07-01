@@ -269,7 +269,8 @@ body {
   align-items: center;
 }
 .title {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   position: relative;
   top: -150px;
 }
@@ -288,9 +289,7 @@ body {
   text-align: center;
   font-family: Roboto;
   font-size: 32px;
-  font-style: normal;
   font-weight: 400;
-  line-height: normal;
   margin-bottom: 16px;
 }
 
@@ -298,12 +297,10 @@ body {
   color: #000;
   text-align: center;
   font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
+  font-size: 18px;
   font-weight: 400;
-  line-height: normal;
+  padding: 0 80px;
   @media (width<=760px) {
-    /* width: 60%; */
     text-align: center;
   }
 }
@@ -367,23 +364,32 @@ h2 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding: 20px 20px;
+  padding: 20px 0px;
+}
+p {
+  font-size: 18px;
+  @media (width<=760px) {
+    text-align: center;
+  }
 }
 
 .tp_title {
   display: flex;
-  align-items: center;
-  flex-direction: row;
+  align-items: flex-start;
+  flex-direction: column;
+  @media (width<=760px) {
+    align-items: center;
+  }
 }
 
-.tp_title .m {
-  padding: 20px 21px;
-}
 .color {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 180px 80px;
+  @media (width<=760px) {
+    align-items: center;
+  }
 }
 
 .color .colorimg {
