@@ -265,7 +265,7 @@ body {
 .userinterview {
   display: flex;
   flex-direction: row;
-  border-radius: 12px;
+  border-radius: 24px;
   background-image: linear-gradient(90deg, #93a5cf 0%, #e4efe9 100%);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 20px 100px;
@@ -325,4 +325,93 @@ p {
     margin: 20px 0;
     font-size: 18px;
   }
+}
+
+.protokanocontent {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 60px 0;
+  margin: 0 44px;
+  gap: 44px;
+  @media (width<=944px) {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.prototype {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border-radius: 24px;
+  background-image: linear-gradient(
+    90deg,
+    #d5dee7 0%,
+    #e8ebf2 50%,
+    #e2e7ed 100%
+  );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px 100px 0 100px;
+  /* margin: 0 44px; */
+}
+.prototype img {
+  width: 100%;
+  /* box-shadow: 33.908px 33.908px 101.725px 0px rgba(22, 17, 17, 0.2); */
+}
+
+.kano {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-radius: 24px;
+  background-image: linear-gradient(
+    90deg,
+    #d5dee7 0%,
+    #e8ebf2 50%,
+    #e2e7ed 100%
+  );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px 100px 0 100px;
+  /* margin: 0 44px; */
+}
+
+.kano img {
+  width: 100%;
+  /* box-shadow: 33.908px 33.908px 101.725px 0px rgba(22, 17, 17, 0.2); */
+}
+
+.abtest {
+  display: flex;
+  flex-direction: row;
+  border-radius: 24px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px 100px;
+  margin: 0 44px 64px 44px;
+  background-image: linear-gradient(90deg, #fdfbfb 0%, #ebedee 100%);
+
+  @media (width<=760px) {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.abtest img {
+  width: 100%;
+}
+
+.abtest .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
