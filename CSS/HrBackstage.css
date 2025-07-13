@@ -59,14 +59,12 @@ body {
 .culume .hrculume {
   /* height: 100%; */
   width: 60%;
-  position: relative;
-  top: -20px;
+
   object-fit: cover;
   /* aspect-ratio: 1 / 1; */
   @media (width<=760px) {
     width: 100%;
     position: relative;
-    top: -42px;
   }
 }
 
