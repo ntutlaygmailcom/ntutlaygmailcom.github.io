@@ -269,7 +269,7 @@ body {
   border-radius: 24px;
   background-image: linear-gradient(90deg, #93a5cf 0%, #e4efe9 100%);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 20px 100px;
+  padding: 20px 50px;
   margin: 0 44px;
 
   @media (width<=760px) {
@@ -358,7 +358,7 @@ p {
     #e2e7ed 100%
   );
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 20px 100px 0 100px;
+  padding: 20px 50px 0 50px;
   /* margin: 0 44px; */
 }
 .prototype img {
@@ -379,7 +379,7 @@ p {
     #e2e7ed 100%
   );
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 20px 100px 0 100px;
+  padding: 20px 50px 0 50px;
   /* margin: 0 44px; */
 }
 
@@ -391,9 +391,10 @@ p {
 .abtest {
   display: flex;
   flex-direction: row;
+  align-items: center;
   border-radius: 24px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  padding: 20px 100px;
+  padding: 20px 50px;
   margin: 0 44px 64px 44px;
   background-image: linear-gradient(90deg, #fdfbfb 0%, #ebedee 100%);
 
@@ -411,8 +412,12 @@ p {
 }
 
 .abtest .content {
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (width<=760px) {
+    width: 100%;
+  }
 }
