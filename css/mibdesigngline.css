@@ -40,6 +40,8 @@ body {
   width: 80%;
   margin: auto;
   margin-bottom: 20px;
+  padding: 0 0;
+  text-align: left;
   @media (width<=760px) {
     color: #f4f8fa;
     font-family: Roboto;
@@ -62,6 +64,8 @@ body {
   width: 80%;
   margin: auto;
   margin-bottom: 20px;
+  text-align: left;
+
   @media (width<=760px) {
     color: #fff;
     font-family: Roboto;
