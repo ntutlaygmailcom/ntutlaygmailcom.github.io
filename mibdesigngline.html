@@ -174,8 +174,10 @@
       // 初始化 Swiper
       const swiper = new Swiper(".swiper-container", {
         loop: true,
+        observer: true,
+        observeParents: true,
         slidesPerView: 1,
-        spaceBetween: 10,
+        spaceBetween: 0,
         speed: 500,
         effect: "slide",
 
@@ -197,6 +199,22 @@
         },
       });
 
+      // 新增：滑動時收合所有展開的區域
+      swiper.on('slideChangeTransitionStart', function () {
+        document.querySelectorAll('.tagglearea.expanded').forEach((area) => {
+          area.classList.remove('expanded');
+          const button = area.querySelector('.tagglebtn');
+          if (button) {
+            button.classList.remove('rotated');
+          }
+          
+          const switchElement = area.closest('.switch');
+          if (switchElement) {
+            switchElement.scrollIntoView();
+          }
+        });
+      });
+
       // 展開收合功能
       document.addEventListener("DOMContentLoaded", function () {
         const toggleButtons = document.querySelectorAll(".tagglebtn");
@@ -216,6 +234,11 @@
               taggleArea.classList.add("expanded");
               this.classList.add("rotated");
             }
+
+            // Delay Swiper update to allow for CSS transition
+            setTimeout(() => {
+              swiper.update();
+            }, 300);
           });
         });
       });
