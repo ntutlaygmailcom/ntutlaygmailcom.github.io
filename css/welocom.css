@@ -116,18 +116,12 @@ body {
 
 .button-wrap a {
   text-decoration: none;
-  font-family: "PostNoBillsColombo-SemiBold";
 }
 
 .button-wrap .enter {
   font-weight: 400;
   text-decoration: none;
   font-size: 20px;
-  /* font-family: "PostNoBillsColombo-SemiBold";
-  src: url("/font/PostNoBillsColombo-SemiBold.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap; */
 }
 
 /* Button Shadow Container */
