@@ -527,7 +527,7 @@ body {
   font-family: Roboto;
   font-size: 26px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
 }
 .mockup .mockuppic .copywritting p {
   color: #fff;
@@ -559,6 +559,12 @@ body {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   object-position: center;
+  border-radius: 32px;
+  background: #d1dde5;
+  box-shadow: 0 -10px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .mockup .mockuppic .pic .pic-a {
@@ -678,6 +684,11 @@ body {
   width: 85%;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 32px;
+  background: #d1dde5;
+  padding: 24px;
+  justify-content: center;
+  align-items: center;
 }
 
 .first {
