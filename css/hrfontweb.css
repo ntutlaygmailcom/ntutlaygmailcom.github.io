@@ -83,7 +83,7 @@ body {
 }
 
 .intro {
-  background-image: url("../img/bgmock.png");
+  background-image: url("../img/bgmock.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
