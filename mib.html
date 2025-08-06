@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/mib.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <link rel="stylesheet" href="./css/variable.css" />
+    <link rel="stylesheet" href="./css/loading.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css"
@@ -39,6 +40,12 @@
   </head>
 
   <body>
+    <div id="loading-screen">
+      <img src="./img/wlogo.svg" alt="Loading..." />
+      <div id="loading-text">
+        Loading<span class="dot1">.</span><span class="dot2">.</span><span class="dot3">.</span>
+      </div>
+    </div>
     <nav>
       <div class="btn-group">
         <div class="logo">logo</div>
@@ -515,7 +522,7 @@
                   </div>
                   <button class="tagglebtn">
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
+                      xperlns="http://www.w3.org/2000/svg"
                       width="53"
                       height="54"
                       viewBox="0 0 53 54"
@@ -768,6 +775,12 @@
           }
           e.stopPropagation();
         });
+      });
+    </script>
+    <script>
+      window.addEventListener('load', function() {
+        const loadingScreen = document.getElementById('loading-screen');
+        loadingScreen.style.display = 'none';
       });
     </script>
   </body>
