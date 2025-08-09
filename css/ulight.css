@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "miso";
+  src: url("/font/miso.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/* 重置 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; background: #e0e0e0; }
+
+/* 容器 */
+.hero { display: flex; align-items: center; justify-content: center;
+  position: relative; padding: 40px; overflow: hidden; }
+
+/* 背景形狀 */
+.hero .bg-circle {
+  position: absolute; width: 450px; height: 450px;
+  border-radius: 50%; background: #ffffff;
+  left: 5%; top: 10%;
+}
+.hero .bg-rect {
+  position: absolute; width: 600px; height: 300px;
+  background: #53babc;
+  left: 10%; bottom: 0;
+}
+
+/* 左區塊文字區 */
+.hero-left { width: 40%; padding-left: 60px; position: relative; z-index: 2; }
+.hero-left h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+.hero-left h2 { font-size: 4rem; letter-spacing: 2px; margin-bottom: 1rem; }
+.hero-left .app-label {
+  position: absolute; left: -40px; top: 50%; transform: rotate(-90deg);
+  font-size: 1rem; letter-spacing: 1px;
+}
+.hero-left .btn-arrow {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 60px; height: 60px; background: #53babc; color: #000;
+  font-size: 2rem; text-decoration: none;
+  border-radius: 4px; margin-top: 1rem;
+}
+
+/* 右區塊圖示 */
+.hero-right { width: 50%; position: relative; z-index: 2; }
+.hero-right img { width: 100%; height: auto; display: block; }
+
+/* 公司標示 */
+.company { position: absolute; bottom: 20px; left: 20px;
+  font-size: 1rem; display: flex; align-items: center; }
+.company .icon-down {
+  display: inline-block; width: 1rem; height: 1rem;
+  border-left: 2px solid #000; border-bottom: 2px solid #000;
+  transform: rotate(-45deg); margin-right: 6px;
+}
