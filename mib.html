@@ -43,7 +43,8 @@
     <div id="loading-screen">
       <img src="./img/wlogo.svg" alt="Loading..." />
       <div id="loading-text">
-        Loading<span class="dot1">.</span><span class="dot2">.</span><span class="dot3">.</span>
+        Loading<span class="dot1">.</span><span class="dot2">.</span
+        ><span class="dot3">.</span>
       </div>
     </div>
     <nav>
@@ -728,10 +729,11 @@
             button.classList.remove("rotated");
           }
 
-          const switchElement = area.closest(".switch");
-          if (switchElement) {
-            switchElement.scrollIntoView();
-          }
+          const conswiper = document.querySelector(".swiper-container");
+          window.scrollTo({
+            top: conswiper.offsetTop - 80,
+            behavior: "smooth",
+          });
         });
       });
 
@@ -778,9 +780,9 @@
       });
     </script>
     <script>
-      window.addEventListener('load', function() {
-        const loadingScreen = document.getElementById('loading-screen');
-        loadingScreen.style.display = 'none';
+      window.addEventListener("load", function () {
+        const loadingScreen = document.getElementById("loading-screen");
+        loadingScreen.style.display = "none";
       });
     </script>
   </body>
