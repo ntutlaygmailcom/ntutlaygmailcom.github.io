@@ -1,0 +1,33 @@
+.totopcon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.totopcon.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.totopcon.at-bottom {
+  bottom: 90px; /* Adjust this value based on your footer's height */
+}
+
+.totop img {
+  width: 50px; /* Adjust size as needed */
+  height: 50px; /* Adjust size as needed */
+  transition: transform 0.2s ease-in-out;
+}
+
+.totop:hover img {
+  transform: scale(1.1);
+}
+
+.totop:active img {
+  transform: scale(0.9);
+}
