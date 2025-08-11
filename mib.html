@@ -27,7 +27,7 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <link href="https://fonts.cdnfonts.com/css/miso" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
@@ -752,6 +752,13 @@
             if (isExpanded) {
               taggleArea.classList.remove("expanded");
               this.classList.remove("rotated");
+              const conswiper = document.querySelector(".swiper-container");
+              if (conswiper) {
+                window.scrollTo({
+                  top: conswiper.offsetTop - 80,
+                  behavior: "smooth",
+                });
+              }
             } else {
               taggleArea.classList.add("expanded");
               this.classList.add("rotated");
