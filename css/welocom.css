@@ -1,6 +1,14 @@
-@font-face {
+/* @font-face {
   font-family: "PostNoBillsColombo-SemiBold";
   src: url("/font/PostNoBillsColombo-SemiBold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+} */
+
+@font-face {
+  font-family: "Miso";
+  src: url("/font/miso.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -18,7 +26,8 @@ body {
 }
 .wellcomBT {
   text-align: center;
-  font-family: "PostNoBillsColombo-SemiBold";
+  /* font-family: "PostNoBillsColombo-SemiBold"; */
+  font-family: "Miso";
   font-size: 24px;
   font-style: normal;
   font-weight: 700;

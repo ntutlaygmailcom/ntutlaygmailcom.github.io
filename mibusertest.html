@@ -41,10 +41,14 @@
   <body>
     <nav>
       <div class="btn-group">
-        <div class="logo">logo</div>
+        <div class="logo">
+          <a href="/index.html">
+            <img src="./img/wlogo.svg" />
+          </a>
+        </div>
         <div class="btn-groupnologo">
           <a href="/designpage.html">Project</a>
-          <a href="">Research</a>
+          <a href="/research.html">Research</a>
           <a href="/home.html">About</a>
         </div>
       </div>
@@ -187,15 +191,15 @@
       });
 
       // 新增：滑動時收合所有展開的區域
-      swiper.on('slideChangeTransitionStart', function () {
-        document.querySelectorAll('.tagglearea.expanded').forEach((area) => {
-          area.classList.remove('expanded');
-          const button = area.querySelector('.tagglebtn');
+      swiper.on("slideChangeTransitionStart", function () {
+        document.querySelectorAll(".tagglearea.expanded").forEach((area) => {
+          area.classList.remove("expanded");
+          const button = area.querySelector(".tagglebtn");
           if (button) {
-            button.classList.remove('rotated');
+            button.classList.remove("rotated");
           }
-          
-          const switchElement = area.closest('.switch');
+
+          const switchElement = area.closest(".switch");
           if (switchElement) {
             switchElement.scrollIntoView();
           }
@@ -250,9 +254,9 @@
       });
     </script>
     <script>
-      window.addEventListener('load', function() {
-        const loadingScreen = document.getElementById('loading-screen');
-        loadingScreen.style.display = 'none';
+      window.addEventListener("load", function () {
+        const loadingScreen = document.getElementById("loading-screen");
+        loadingScreen.style.display = "none";
       });
     </script>
   </body>
