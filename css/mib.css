@@ -453,10 +453,13 @@ body {
   justify-content: center;
   align-items: center;
 
+ 
+
   @media (width<=958px) {
     height: 1000px;
   }
 }
+
 .solution .ver .circle {
   width: 180px;
   height: 180px;

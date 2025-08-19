@@ -423,8 +423,8 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  @media (width<=760px) {
-    font-size: 17px;
+  @media (width<=1524px) {
+    font-size: 20px;
   }
 }
 
@@ -446,14 +446,22 @@ body {
 
 .solution .ver {
   width: 100%;
-  height: 940px;
+  height: 1070px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
+  @media (width>=2069px) {
+    height: 1470px;
+  }
+
+  @media (width>=2068px) {
+    height: 1303px;
+  }
+
   @media (width<=958px) {
-    height: 807px;
+    height: 765px;
   }
 }
 .solution .ver .circle {
