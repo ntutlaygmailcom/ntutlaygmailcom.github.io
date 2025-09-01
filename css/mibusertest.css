@@ -96,6 +96,7 @@ body {
   text-align: center;
   padding: 20px 0;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  height: 0%;
   @media (width<=1021px) {
     width: 100%;
     padding: 20px 12px;
@@ -362,7 +363,7 @@ p {
   /* margin: 0 44px; */
 }
 .prototype img {
-  width: 100%;
+  width: 90%;
   /* box-shadow: 33.908px 33.908px 101.725px 0px rgba(22, 17, 17, 0.2); */
 }
 
@@ -371,6 +372,7 @@ p {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  gap: 80px;
   border-radius: 24px;
   background-image: linear-gradient(
     90deg,
@@ -384,7 +386,8 @@ p {
 }
 
 .kano img {
-  width: 100%;
+  width: 80%;
+  margin-bottom: 40px;
   /* box-shadow: 33.908px 33.908px 101.725px 0px rgba(22, 17, 17, 0.2); */
 }
 
@@ -420,4 +423,103 @@ p {
   @media (width<=760px) {
     width: 100%;
   }
+}
+
+.horizontalcontent .hor_2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  width: 100%;
+  height: fit-content;
+  border-radius: 0 20px 20px 0;
+  margin: 60px 20px 200px 0;
+  padding: 44px 0 44px 44px;
+
+  @media (width<=958px) {
+    padding: 44px 0 44px 0px;
+  }
+}
+
+.more {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: fit-content;
+  padding: 44px 0 44px 0px;
+
+  @media (width<=949px) {
+    padding: 44px 0 44px 0px;
+  }
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 80%;
+  justify-content: center;
+}
+
+.btn a {
+  background: #fff;
+  border-radius: 100px;
+  color: #000;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  width: 23%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  height: 60px;
+  min-width: 174px;
+}
+
+.btn a.active {
+  background: #8cdff0;
+}
+
+.circle_b {
+  width: 180px;
+  height: 180px;
+  background-color: #00acc1;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 40px;
+  @media (width<=760px) {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    left: 20px;
+  }
+}
+
+.hortopcontent {
+  position: relative;
+  top: 100px;
+  background-color: #00acc1;
+  display: flex;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+
+  @media (width<=530px) {
+    width: 250px;
+  }
+}
+
+.hortopcontent h1 {
+  font-size: 38px;
+  color: #000;
+  position: relative;
+  right: 20px;
 }
