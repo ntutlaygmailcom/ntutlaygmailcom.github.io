@@ -365,6 +365,9 @@ body {
 
 .heighlight {
   font-size: 65px;
+  @media (width<=760px) {
+    font-size: 32px;
+  }
 }
 
 .option .imgcontent {
@@ -483,6 +486,9 @@ body {
 
 .situation .option .title h1 {
   font-size: 62px;
+  @media (width<=760px) {
+    font-size: 32px;
+  }
 }
 
 .situation .option .content {
@@ -556,6 +562,7 @@ __token___ */
 }
 
 .tokenimg {
+  width: 100%;
   margin-bottom: 60px;
 }
 
@@ -601,6 +608,9 @@ NPS */
   align-items: center;
   gap: 100px;
   margin: auto;
+  @media (width<=760px) {
+    flex-wrap: wrap;
+  }
 }
 
 .anacon {
