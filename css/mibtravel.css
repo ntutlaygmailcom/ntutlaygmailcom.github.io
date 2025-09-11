@@ -395,6 +395,10 @@ body {
   }
 }
 
+#mai {
+  scroll-margin-top: 100px;
+}
+
 .analysis_img {
   width: 100%;
 }
@@ -1201,4 +1205,8 @@ body {
 
 .horizontalcontent .hor_2.more img {
   width: 100%;
+}
+
+#mai {
+  scroll-margin-top: 100px;
 }

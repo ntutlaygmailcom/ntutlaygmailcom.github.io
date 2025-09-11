@@ -270,6 +270,10 @@ body {
   align-items: center;
 }
 
+#mai {
+  scroll-margin-top: 100px;
+}
+
 .mainintro h1 {
   color: #000;
   text-align: center;
@@ -452,8 +456,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
- 
 
   @media (width<=958px) {
     height: 1000px;
