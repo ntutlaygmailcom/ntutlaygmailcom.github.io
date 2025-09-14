@@ -1,16 +1,24 @@
+@font-face {
+  font-family: "roboto";
+  src: url("/font/Roboto-Thin-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 html,
 body {
   color: var(--primary-color);
   background-image: linear-gradient(133deg, #f5f7fa 24.2%, #c3cfe2 69.65%);
   background-repeat: no-repeat;
   scroll-behavior: smooth;
-  font-family: "Roboto" sans-serif;
+  font-family: "roboto";
 }
 
 .welcome {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  font-family: "roboto";
   /* background: rgba(255, 255, 255, 0.37); */
   /* height: 60%; */
 }
@@ -21,7 +29,7 @@ body {
   color: #3c4043;
   font-weight: 600;
   padding-top: 20px;
-  font-family: "Roboto" sans-serif;
+  font-family: "roboto" ;
   @media (width<=760px) {
     font-size: 24px;
   }
@@ -33,7 +41,7 @@ body {
   font-weight: 600;
   padding-top: 20px;
   color: #3c4043;
-  font-family: "Roboto" sans-serif;
+  font-family: "roboto" ;
   @media (width<=760px) {
     font-size: 14px;
     padding-bottom: 20px;
@@ -99,14 +107,14 @@ body {
 
 .intro h1 {
   color: #3c4043;
-  font-family: Roboto;
+  font-family: "roboto" ;
   font-size: 24px;
   font-weight: 600;
 }
 
 .intro p {
   color: #3c4043;
-  font-family: Roboto;
+  font-family: "roboto" ;
   font-size: 20px;
   letter-spacing: 0.32px;
 }
@@ -139,12 +147,12 @@ body {
 .introduction h1 {
   margin-bottom: 20px;
   font-size: 36px;
-  font-family: roboto;
+  font-family: "roboto" ;
 }
 
 .introduction p {
   font-size: 24px;
-  font-family: roboto;
+  font-family: "roboto" ;
   align-items: center;
   width: auto;
 }
@@ -166,7 +174,7 @@ body {
 
 .hrmainsolution h1 {
   color: #000;
-  font-family: Roboto;
+  font-family: "roboto" ;
   font-size: 36px;
   font-style: normal;
   font-weight: 600;
@@ -179,7 +187,7 @@ body {
 
 .hrmainsolution h2 {
   color: #000;
-  font-family: Roboto;
+  font-family: "roboto" ;
   font-size: 28px;
   font-style: normal;
   font-weight: 600;
@@ -191,7 +199,7 @@ body {
 
 .hrmainsolution p {
   color: #000;
-  font-family: Roboto;
+  font-family: "roboto" ;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
