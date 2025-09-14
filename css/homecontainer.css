@@ -5,9 +5,18 @@
   font-style: normal;
   font-display: swap;
 }
+.title {
+  display: flex;
+  flex-direction: row;
+  padding-left: 24px;
+}
+
+.title img {
+  width: 20px;
+}
 
 .container {
-  height: calc(100vh - 149px);
+  height: calc(100vh - 164px);
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -51,26 +60,49 @@
 
 .container .link {
   /* padding: 20px 20px; */
-  @media (width<=760px) {
+  display: flex;
+  flex-direction: column;
+  @media (width<=1465px) {
     width: 100%;
-    padding: unset;
   }
 }
 
-/* .container .link .infogroup {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  } */
+.container .link .infogroup {
+  background-color: #ecf0f3;
+  display: flex;
+  flex-direction: column;
+  padding: 93px 0px 60px 0px;
+  @media (width<=1465px) {
+    width: 100%;
+  }
+}
+
+.exp {
+  background-color: #ecf0f3;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 24px 24px 24px;
+  gap: 12px;
+}
+.exp h2 {
+  color: #000;
+  font-family: Roboto;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 113.636% */
+  letter-spacing: -0.2px;
+}
 
 .container .link h1 {
   color: #000;
-  font-family: Arial;
-  font-size: 26px;
+  font-family: "Miso";
+  font-size: 36px;
   font-style: normal;
   font-weight: 400;
   line-height: 25px; /* 125% */
   letter-spacing: -0.2px;
+
   padding: 20px;
 
   @media (width<=760px) {
@@ -86,29 +118,10 @@
   font-weight: 400;
   line-height: 25px; /* 156.25% */
   letter-spacing: -0.2px;
-  padding: 20px;
+  padding: 24px 24px 0px 24px;
   @media (width<=760px) {
     padding: 20px 12px;
     background-color: #ecf0f3;
-  }
-}
-.container .link .more {
-  text-align: right;
-  padding: 24px 34px;
-
-  @media (width<=760px) {
-    background-color: #d3d3d3;
-    padding: 12px 12px;
-    margin-bottom: 44px;
-  }
-}
-.container .link .more a {
-  text-decoration: none;
-  font-family: miso;
-  color: inherit;
-  font-size: 24px;
-  @media (width<=760px) {
-    font-size: 20px;
   }
 }
 
@@ -173,4 +186,28 @@
 }
 img {
   width: 100%;
+}
+
+.container .link .more {
+  text-align: right;
+  padding: 14px 34px;
+  background-color: #d3d3d3;
+
+  @media (width<=1465px) {
+    background-color: #d3d3d3;
+    padding: 22px 42px;
+  }
+
+  @media (width<=1465px) {
+    order: -1;
+  }
+}
+.container .link .more a {
+  text-decoration: none;
+  font-family: miso;
+  color: inherit;
+  font-size: 24px;
+  @media (width<=760px) {
+    font-size: 20px;
+  }
 }

@@ -9,7 +9,8 @@
     <title>Pei Protfolio</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/nav.css" />
-    <link rel="stylesheet" href="./css/homecontainer.css" />
+    <link rel="stylesheet" href="css/homecontainer.css" />
+    <link rel="stylesheet" href="css/fab.css" />
     <link rel="stylesheet" href="./css/footer.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <link href="https://fonts.cdnfonts.com/css/miso" rel="stylesheet" />
@@ -35,54 +36,113 @@
       <div class="picture"></div>
       <div class="link">
         <div class="infogroup">
-          <h1>Info</h1>
+          <div class="title">
+            <img src="./img/research_dot.svg" alt="" class="dot" />
+            <h1>Self info</h1>
+          </div>
 
           <p class="infocontent">
-            Certainly! Here’s a fictional self-introduction for a UI/UX
-            designer: Hi there! My name is Alex Johnson, and I'm a passionate
-            UI/UX designer with over 6 years of experience in creating intuitive
-            and engaging digital
+            Hi, I’m Pei-Chen, or you can call me Artezia — a UI/UX designer with
+            a background in architecture, product design, and engineering. I’m
+            quick to learn, analytical, and enjoy solving problems through
+            design.
           </p>
-
           <p class="infocontent">
-            Certainly! Here’s a fictional self-introduction for a UI/UX
-            designer: Hi there! My name is Alex Johnson, and I'm a passionate
-            UI/UX designer with over 6 years of experience in creating intuitive
-            and engaging digital
+            I currently work in fintech, designing platforms such as mobile
+            banking, online insurance, fund subscription, and HR systems. I
+            specialize in user flow optimization, task-based testing, NPS
+            analysis, and building scalable design systems. I’m also experienced
+            in cross-platform token integration and collaborating closely with
+            engineers, PMs, and users.
+          </p>
+          <p class="infocontent">
+            Previously, I co-founded a 3D printing startup, leading both
+            hardware and interface design. I helped improve product yield,
+            enhance the user experience, and drive sales through interface
+            upgrades and education programs.
+          </p>
+          <p class="infocontent">
+            To me, good design blends logic, aesthetics, and empathy—creating
+            real value through collaboration.
           </p>
         </div>
 
-        <div class="more">
-          <a href="/designpage.html"
-            >More Project
-            <svg
-              width="13"
-              height="16"
-              viewBox="0 0 13 16"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M12.5 7.13398C13.1667 7.51888 13.1667 8.48113 12.5 8.86603L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13398Z"
-                fill="#434546"
-              />
-            </svg>
-          </a>
+        <div class="infogroup">
+          <div class="title">
+            <img src="./img/research_dot.svg" alt="" class="dot" />
+            <h1>Experience</h1>
+          </div>
+
+          <div class="exp">
+            <h2>E.sun Commercial Bank, Ltd.</h2>
+            <p>UIUX Designer</p>
+            <p>Jun. 2023 - Now</p>
+          </div>
+          <div class="exp">
+            <h2>FreEntity Co.,Ltd.</h2>
+            <p>UIUX Designer</p>
+            <p>Jun. 2019 - Dec.2022</p>
+          </div>
+          <div class="exp">
+            <h2>National Taiwan University of Science and Technology</h2>
+            <p>Doctoral Candidate Reasercher</p>
+            <p>Jun. 2019 - Dec. 2021</p>
+          </div>
+        </div>
+        <div class="infogroup">
+          <div class="title">
+            <img src="./img/research_dot.svg" alt="" class="dot" />
+            <h1 class="titleh1">Education</h1>
+          </div>
+
+          <div class="exp">
+            <h2>National Taiwan University of Science and Technology</h2>
+            <p>Major human interaction and structure design</p>
+            <p>Master of Science</p>
+          </div>
+          <div class="exp">
+            <h2>National Taipei University of Technology, Taipei Tech.</h2>
+            <p>Major Architecture and Product Design</p>
+            <p>Bachelor of Science</p>
+          </div>
+          <div class="exp">
+            <h2>National Taiwan University of Science and Technology</h2>
+            <p>Doctoral Candidate</p>
+            <p>Jun. 2019 - Dec. 2021</p>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- <a href="/designpage.html" class="fab" title="More Projects">
+      <p>More Projects</p>
+      <svg
+        width="13"
+        height="16"
+        viewBox="0 0 13 16"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M12.5 7.13398C13.1667 7.51888 13.1667 8.48113 12.5 8.86603L2 14.9282C1.33333 15.3131 0.499999 14.832 0.499999 14.0622L0.5 1.93782C0.5 1.16802 1.33333 0.686896 2 1.0718L12.5 7.13398Z"
+          fill="white"
+        />
+      </svg>
+    </a> -->
+
     <footer>
       <div class="footersvg">
-        <img src="./img/logocircal.svg" />
-        <img class="footer-L" src="./img/linked.svg" />
+        <a href="https://www.linkedin.com/in/pei-chen-w-a13643211/"
+          ><img class="footer-L" src="./img/linked.svg"
+        /></a>
       </div>
       <hr class="line" />
       <!-- <p class="c_circal">©Pei Chen 2024</p> -->
     </footer>
     <script>
-      window.addEventListener('load', function() {
-        const loadingScreen = document.getElementById('loading-screen');
-        loadingScreen.style.display = 'none';
+      window.addEventListener("load", function () {
+        const loadingScreen = document.getElementById("loading-screen");
+        loadingScreen.style.display = "none";
       });
     </script>
   </body>

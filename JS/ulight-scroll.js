@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
   // "To Top" button functionality
   if (toTopButton && introSection && transSection && footer) {
     toTopButton.addEventListener("click", function() {
-      introSection.scrollIntoView({ behavior: "smooth" });
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
     window.addEventListener("scroll", function() {
@@ -27,6 +27,19 @@ document.addEventListener("DOMContentLoaded", function() {
         toTopButton.classList.add("at-bottom");
       } else {
         toTopButton.classList.remove("at-bottom");
+      }
+    });
+  }
+
+  // Smooth scroll for anchor link
+  const introLink = document.querySelector('.tointro .applink[href="#introo"]');
+  if (introLink) {
+    introLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
       }
     });
   }
