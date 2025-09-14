@@ -114,6 +114,7 @@ body {
   gap: 20px;
   padding-top: 20px;
   width: 100%;
+  justify-content: center;
   @media (width<=1179px) {
     flex-wrap: wrap;
   }
@@ -146,7 +147,7 @@ body {
 }
 
 .demoimg {
-  width: 100%;
+  width: 90%;
   height: 50%;
 }
 
