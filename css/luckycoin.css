@@ -42,7 +42,7 @@ body {
 .topp {
   color: #fff;
   text-align: center;
-  font-family: "roboto" ;
+  font-family: "roboto";
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -55,7 +55,7 @@ body {
   font-size: 63px;
   justify-content: center;
   align-items: center;
-  font-family: "roboto" ;
+  font-family: "roboto";
 }
 
 .hero .purpose {
@@ -71,7 +71,7 @@ body {
 
 .hero .purpose h1 {
   color: #f4f8fa;
-  font-family: "roboto" ;
+  font-family: "roboto";
   font-size: 64px;
   font-weight: 700;
   width: 80%;
@@ -81,7 +81,7 @@ body {
   text-align: left;
   @media (width<=760px) {
     color: #f4f8fa;
-    font-family: "roboto" ;
+    font-family: "roboto";
     font-size: 44px;
     font-weight: 700;
     width: 80%;
@@ -93,7 +93,7 @@ body {
 
 .hero .purpose p {
   color: #fff;
-  font-family: "roboto" ;
+  font-family: "roboto";
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -105,7 +105,7 @@ body {
 
   @media (width<=760px) {
     color: #fff;
-    font-family: "roboto" ;
+    font-family: "roboto";
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -130,7 +130,7 @@ body {
   background: #fff;
   border-radius: 100px;
   color: #000;
-  font-family: "roboto" ;
+  font-family: "roboto";
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
@@ -256,7 +256,7 @@ body {
 .intro .copywrite h1 {
   color: #fff;
   text-align: left;
-  font-family: "roboto" ;
+  font-family: "roboto";
   font-size: 40px;
   font-style: normal;
   font-weight: 600;
@@ -321,7 +321,7 @@ body {
 .title .p1 {
   color: #000;
   text-align: center;
-  font-family: "roboto" ;
+  font-family: "roboto";
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 26px;
@@ -330,7 +330,7 @@ body {
 .title .p2 {
   color: #000;
   text-align: center;
-  font-family: "roboto" ;
+  font-family: "roboto";
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 16px;
@@ -339,7 +339,7 @@ body {
 .title .p3 {
   color: #000;
   text-align: center;
-  font-family: "roboto" ;
+  font-family: "roboto";
   font-size: 18px;
   font-weight: 400;
   padding: 0 80px;
@@ -363,8 +363,8 @@ body {
 h1 {
   color: #000;
   text-align: center;
-  font-family: "roboto" ;
-  
+  font-family: "roboto";
+
   font-size: 32px;
   font-weight: 400;
   padding-bottom: 20px;
@@ -372,8 +372,8 @@ h1 {
 
 .tp {
   color: #000;
-  font-family: "roboto" ;
-  
+  font-family: "roboto";
+
   font-size: 14px;
   font-weight: 400;
   width: 30%;
@@ -452,7 +452,7 @@ h1 {
 h2 {
   color: #000;
   text-align: center;
-  font-family: "roboto" ;
+  font-family: "roboto";
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -497,7 +497,7 @@ p {
 
 .tp_title h2 {
   color: #fff;
-  font-family: "roboto" ;
+  font-family: "roboto";
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -506,7 +506,7 @@ p {
 
 .luck_wo h2 {
   color: #fff;
-  font-family: "roboto" ;
+  font-family: "roboto";
   font-size: 62px;
   font-style: normal;
   font-weight: 400;
@@ -515,7 +515,7 @@ p {
 
 .luck_wo p {
   color: #fff;
-  font-family: "roboto" ;
+  font-family: "roboto";
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -528,6 +528,9 @@ p {
 
 .flowfont {
   margin-left: 40px;
+  @media (width<=760px) {
+    margin: 0px 40px;
+  }
 }
 
 .color {
@@ -564,7 +567,7 @@ p {
   background: #fff;
   border-radius: 100px;
   color: #000;
-  font-family: "roboto" ;
+  font-family: "roboto";
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
