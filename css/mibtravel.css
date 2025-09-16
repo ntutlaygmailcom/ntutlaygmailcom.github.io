@@ -356,11 +356,15 @@ body {
   text-wrap: wrap;
   @media (width<=760px) {
     bottom: 125%;
+    font-size: 14px;
   }
 }
 
 .phone.phone {
   bottom: 115%;
+  @media (width<=760px) {
+    font-size: 14px;
+  }
 }
 
 .introimgcontener .dialogbox img {
