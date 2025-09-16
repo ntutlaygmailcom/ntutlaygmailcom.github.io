@@ -193,13 +193,13 @@ body {
   }
 }
 .intro .copywrite {
-  margin-left: 280px;
+  margin-left: 80px;
   margin-right: 80px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   @media (width<=1480px) {
-    margin-left: 180px;
+    margin-left: 80px;
     margin-right: 80px;
     margin-top: 80px;
     margin-bottom: 50px;
@@ -227,6 +227,9 @@ body {
   font-weight: 600;
   line-height: normal;
   padding-bottom: 14px;
+  text-align: left;
+  @media (width<=804px) {
+  }
 }
 
 .intro .copywrite p {
