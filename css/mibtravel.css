@@ -468,6 +468,10 @@ body {
     height: 1303px;
   }
 
+  @media (width>=1963px) {
+    height: 1250, px;
+  }
+
   @media (width<=958px) {
     height: 765px;
   }
@@ -861,7 +865,7 @@ body {
   border: 1px solid #00a19b;
   background: rgba(183, 240, 233, 0.2);
   color: #00a19b;
-  font-family: Inter;
+  font-family: "roboto";
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -1213,4 +1217,7 @@ body {
 
 #mai {
   scroll-margin-top: 100px;
+}
+.perimg {
+  width: 13%;
 }

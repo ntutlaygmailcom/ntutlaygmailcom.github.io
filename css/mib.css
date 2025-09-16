@@ -1199,3 +1199,7 @@ body {
 .horizontalcontent .hor_2.more img {
   width: 100%;
 }
+
+.perimg {
+  width: 13%;
+}
