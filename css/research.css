@@ -397,6 +397,7 @@ body {
 }
 
 .wireimg {
+  width: 20%;
   @media (width<=814px) {
     width: 80%;
   }
@@ -642,4 +643,5 @@ NPS */
 
 .othersimg {
   margin-bottom: 60px;
+  width: 100%;
 }
