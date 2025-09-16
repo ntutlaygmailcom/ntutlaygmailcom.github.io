@@ -610,6 +610,8 @@ NPS */
   margin: auto;
   @media (width<=760px) {
     flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
   }
 }
 
