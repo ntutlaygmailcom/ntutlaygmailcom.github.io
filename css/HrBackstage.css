@@ -97,6 +97,7 @@ body {
   gap: 20px;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .intro h1 {
@@ -145,10 +146,12 @@ body {
 }
 
 .introduction p {
-  font-size: 24px;
+  font-size: 22px;
   font-family: "roboto";
   align-items: center;
   width: auto;
+  line-height: 32px;
+  color: #3c4043;
 }
 
 .demoimg {
@@ -192,16 +195,20 @@ body {
 }
 
 .hrmainsolution p {
-  color: #000;
+  color: #3c4043;
   font-family: "roboto";
-  font-size: 20px;
+  font-size: 22px;
   font-style: normal;
   font-weight: 400;
-  line-height: 30px; /* 125% */
+  line-height: 32px; /* 125% */
 
   @media (width<=760px) {
     text-align: center;
   }
+}
+
+.title {
+  text-align: center;
 }
 
 .hrsolutionintro {
