@@ -364,7 +364,7 @@ body {
 }
 
 .heighlight {
-  font-size: 65px;
+  font-size: 42px;
   @media (width<=760px) {
     font-size: 32px;
   }
@@ -494,10 +494,10 @@ body {
 
 .situation .option .content {
   color: #000;
-  font-size: 24px;
-  line-height: 1.2;
+  font-size: 18px;
+  line-height: 1.5;
   width: 80%;
-  font-family: miso;
+  font-family: "roboto";
 }
 
 .situation .option .secpic {
@@ -558,8 +558,6 @@ __token___ */
 
 .tokencon {
   width: 100%;
-  font-family: miso;
-  font-size: 24px;
 }
 
 .tokenimg {
@@ -644,4 +642,10 @@ NPS */
 .othersimg {
   margin-bottom: 60px;
   width: 100%;
+}
+
+p {
+  font-family: "roboto";
+  font-size: 18px;
+  line-height: 1.5;
 }
