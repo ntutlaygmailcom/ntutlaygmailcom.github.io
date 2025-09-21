@@ -769,7 +769,7 @@
   @media (width<=1164px) {
     width: 76%;
   }
-  margin-bottom: 24px;
+  margin-bottom: 52px;
 }
 
 .container .card:hover {
@@ -824,7 +824,23 @@
   align-items: flex-start;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-top: 80px;
+  margin-top: 20%;
+
+  @media (width<=1659px) {
+    margin-top: 10%;
+  }
+
+  @media (width<=1164px) {
+    margin-top: 200%;
+  }
+
+  @media (width<932px) {
+    margin-top: 170%;
+  }
+
+  @media (width<=760px) {
+    margin-top: 80px;
+  }
 }
 img {
   width: 100%;
