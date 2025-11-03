@@ -144,6 +144,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 12px;
 }
 
 .intro .introcontent .con .introcard h3 {
@@ -208,7 +209,7 @@ body {
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 12px;
 }
 
 .analyse .introcard h2 {
@@ -232,7 +233,7 @@ body {
 
 .analyse .introcard .Illustration {
   display: flex;
-  gap: 118px;
+  gap: 60px;
   padding: 24px 0;
 
   @media (width<=760px) {
@@ -287,7 +288,7 @@ body {
 
 .introcontent {
   text-align: center;
-  gap: 28px;
+  /* gap: 28px; */
   padding: 148px 84px;
   background: linear-gradient(
     0deg,
@@ -474,7 +475,7 @@ body {
 }
 .mockupintro .mockupintrocon {
   text-align: center;
-  gap: 28px;
+  /* gap: 28px; */
   padding: 224px 0;
   background: linear-gradient(
     0deg,
@@ -486,6 +487,15 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.proposolimg {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  @media (width<=360px) {
+    width: 100%;
+  }
 }
 
 .mockupintro .mockupintrocon h1 {
@@ -504,6 +514,7 @@ body {
   font-weight: 400;
   line-height: 36px;
   width: 60%;
+  padding-bottom: 60px;
 }
 
 .mockup .mockuppic {
@@ -532,6 +543,9 @@ body {
   font-size: 26px;
   font-style: normal;
   font-weight: 500;
+  @media (width<=760px) {
+    text-align: center;
+  }
 }
 .mockup .mockuppic .copywritting p {
   color: #fff;

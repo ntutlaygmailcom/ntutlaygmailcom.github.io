@@ -21,7 +21,7 @@ body {
 .hero {
   font-family: "Miso";
   @media (width<=760px) {
-    height: 25%;
+    height: 17%;
   }
 }
 
@@ -39,7 +39,7 @@ body {
 .intro .introcontent h2 {
   color: #3c4043;
   font-family: Miso;
-  font-size: 100px;
+  font-size: 70px;
   font-weight: 500;
   line-height: 2;
 }
