@@ -13,6 +13,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/css/libs/animate.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"
+      defer
+    ></script>
+    <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
@@ -36,22 +44,29 @@
     </nav>
     <div class="welcome">
       <div class="people">
-        <img class="hrimg" src="/img/hrbackstageimg.svg" alt="" />
-        <h1>HR SYSTEM</h1>
-        <p>E.sun Bank Human Resources Selection Website - Back Office</p>
+        <img
+          class="hrimg wow bounceInDown"
+          data-wow-duration="1s"
+          src="/img/hrbackstageimg.svg"
+          alt=""
+        />
+        <h1 class="wow fadeInLeft" data-wow-duration="1s">HR SYSTEM</h1>
+        <p class="wow fadeInLeft" data-wow-duration="1s">
+          E.sun Bank Human Resources Selection Website - Back Office
+        </p>
       </div>
-      <div class="culume">
+      <div class="culume wow bounceInDown" data-wow-duration="1s">
         <img class="hrculume" src="/img/hrbackstagecolume.svg" alt="" />
       </div>
     </div>
     <div class="scrollarea">
       <a href="#mai"><img class="tod" src="./img/tocontent.svg" alt="" /></a>
     </div>
-    <div class="intro" id="mai">
+    <div class="intro wow fadeInDown" data-wow-duration="1s" id="mai">
       <div class="discripe">
-        <h1>Boosting HR Efficiency & System Integration</h1>
+        <h1>What I accomplished in this project</h1>
         <p>-Shorten learning time for new HR staff. -</p>
-        <p>-Tailor UI for three user roles-</p>
+        <p>-Tailor UI for three user roles. -</p>
         <p>-SUS tests showed clear UX improvement.-</p>
         <p>-Speed up data integration & case closure.-</p>
       </div>
@@ -63,7 +78,7 @@
         <div class=""></div>
       </div>
     </div>
-    <div class="introduction">
+    <div class="introduction wow fadeInDown" data-wow-duration="1s">
       <div class="caption">
         <h1>Introduction</h1>
         <p>
@@ -79,7 +94,7 @@
       <img class="jurny" alt="" src="/img/hrbck_userjurny.svg" />
     </div>
     <div class="solutionout">
-      <div class="Anchorpoint">
+      <div class="Anchorpoint wow fadeInLeft" data-wow-duration="1s">
         <div class="hr">
           <div class="pointcont">
             <div class="pointimgcontent hrpoint">
@@ -509,6 +524,10 @@
         const loadingScreen = document.getElementById("loading-screen");
         loadingScreen.style.display = "none";
       });
+    </script>
+    <script type="module">
+      const wow = new WOW({});
+      wow.init();
     </script>
   </body>
 </html>
