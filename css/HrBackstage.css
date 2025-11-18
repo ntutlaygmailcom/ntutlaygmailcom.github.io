@@ -111,8 +111,11 @@ body {
 .intro h1 {
   color: #3c4043;
   font-family: "roboto";
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 500;
+  @media (width<=760px) {
+    text-align: center;
+  }
 }
 
 .intro p {

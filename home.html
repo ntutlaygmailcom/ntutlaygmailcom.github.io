@@ -39,7 +39,9 @@
     </nav>
 
     <div class="container">
-      <div class="picture"></div>
+      <div class="picture">
+        <img id="scroll-image" src="./img/mewitkait.svg" alt="Pei Chen" />
+      </div>
       <div class="link">
         <div class="infogroup">
           <div class="title">
@@ -146,7 +148,51 @@
     <script>
       window.addEventListener("load", function () {
         const loadingScreen = document.getElementById("loading-screen");
-        loadingScreen.style.display = "none";
+        if (loadingScreen) {
+          loadingScreen.style.display = "none";
+        }
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const linkContainer = document.querySelector(".link");
+        const scrollImage = document.getElementById("scroll-image");
+        const topImage = "./img/mewitkait.svg";
+        const bottomImage = "./img/golf.png";
+
+        if (!linkContainer || !scrollImage) {
+          return;
+        }
+
+        linkContainer.addEventListener(
+          "scroll",
+          () => {
+            const isAtTop = linkContainer.scrollTop === 0;
+            const isAtBottom =
+              Math.abs(
+                linkContainer.scrollHeight -
+                  linkContainer.scrollTop -
+                  linkContainer.clientHeight
+              ) < 1;
+
+            const currentSrc = scrollImage.src;
+
+            if (isAtTop && !currentSrc.endsWith("mewitkait.svg")) {
+              scrollImage.style.opacity = 0;
+              setTimeout(() => {
+                scrollImage.src = topImage;
+                scrollImage.style.opacity = 1;
+              }, 400);
+            } else if (isAtBottom && !currentSrc.endsWith("golf.png")) {
+              scrollImage.style.opacity = 0;
+              setTimeout(() => {
+                scrollImage.src = bottomImage;
+                scrollImage.style.opacity = 1;
+              }, 400);
+            }
+          },
+          { passive: true }
+        );
       });
     </script>
   </body>
