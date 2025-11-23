@@ -138,6 +138,18 @@ body {
   }
 }
 
+.con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 20px;
+}
+
+.conpic {
+  width: 100%;
+}
+
 .intro .introcontent .con .introcard {
   margin-top: 20px;
   text-align: center;
@@ -286,6 +298,26 @@ body {
     background-repeat: no-repeat;
   }
 }
+.introcontenere {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 42px;
+  background-image: url("../img/hrrecruitm.svg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 300px 0;
+  padding-bottom: 700px;
+  @media (width<=760px) {
+    flex-direction: column;
+    gap: 0px;
+    background-image: url("../img/hrrecruitmaentmobiles.svg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
 
 .introcontent {
   text-align: center;
@@ -296,6 +328,7 @@ body {
     rgba(106, 133, 182, 0.2) -30.05%,
     rgba(186, 200, 224, 0.2) 100%
   );
+
   backdrop-filter: blur(20px);
   margin-bottom: 50px;
   display: flex;
@@ -689,7 +722,7 @@ body {
   background-color: #afc4d1;
 }
 .pink {
-  background-color: #d8d8d8;
+  background-color: #fdfdfd;
 }
 
 .projects {
@@ -726,7 +759,6 @@ body {
 
 .situation {
   padding: 60px;
-  /* background-color: #d0edff; */
   display: none;
   margin: 0 20px 40px 20px;
   border-radius: 0 20px 20px 20px;
@@ -738,20 +770,21 @@ body {
 
 .tabcontent {
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  flex-direction: row;
+  gap: 60px;
   margin-bottom: 20px;
-
+  margin-top: 32px;
   flex-wrap: wrap;
-  @media (width<=1090px) {
-    order: -2;
+  @media (width<=1397px) {
+    order: 0;
     text-align: center;
+    justify-content: center;
   }
 }
 
 .option {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
   align-items: center;
   @media (width<=1090px) {
@@ -780,6 +813,7 @@ body {
   font-size: 22px;
   font-weight: 700;
   line-height: 28px; /* 107.692% */
+  width: 100%;
   @media (width<=760px) {
     /* grid-column: 1 / 3;
     grid-row: 1 / 2; */
@@ -792,10 +826,20 @@ body {
   color: #000;
   font-size: 18px;
   line-height: 1.2;
-  /* width: 50%; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media (width<=800px) {
+    justify-content: center;
+  }
+}
+
+.pic {
+  display: flex;
+
   @media (width<=760px) {
-    /* grid-column: 2 / 3;
-    grid-row: 2 / 3; */
+    flex-wrap: wrap;
   }
 }
 
@@ -803,8 +847,9 @@ body {
   grid-column: 1 / 2;
   grid-row: 1 / 4;
   justify-self: center;
+  justify-content: center;
+  max-width: 634px;
   width: 100%;
-  max-width: 574px;
   @media (width<=760px) {
     /* grid-column: 1 / 2;
     grid-row: 2 / 3; */

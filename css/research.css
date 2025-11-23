@@ -370,6 +370,13 @@ body {
   }
 }
 
+.point {
+  font-family: "roboto";
+  color: #c77f7f;
+  font-size: 20px;
+  font-weight: 600;
+}
+
 .option .imgcontent {
   width: 100%;
 }
@@ -496,7 +503,7 @@ body {
   color: #000;
   font-size: 18px;
   line-height: 1.5;
-  width: 80%;
+  width: 100%;
   font-family: "roboto";
 }
 

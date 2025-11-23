@@ -259,20 +259,210 @@
         <div class="swiper-pagination"></div>
       </div>
     </div>
-    <div class="mockupintro wow fadeInDown" data-wow-duration="2s">
-      <div class="mockupintrocon">
-        <h1>Proposol</h1>
-        <p>
-          This frontend redesign refreshes outdated visuals and user flows.
-          Building on the brand’s palette and design language, it introduces a
-          cleaner, more modern look. UX elements adapt to screen needs, while a
-          unified flow ensures clarity and efficiency.
+
+    <div class="introcontenere wow fadeInDown" data-wow-duration="2s">
+      <div class="introcontent">
+        <h2>
+          Two Types of Users in the Recruitment<br />
+          Step-by-Step vs. Overview
+        </h2>
+        <p class="introp">
+          We identified two types of users in the recruitment flow: one prefers
+          step-by-step guidance, while the other needs a real-time overview to
+          stay in control. The old system’s linear flow caused issues—users
+          couldn’t see the full context and often worried that saved data
+          couldn't be reviewed or edited later. To solve this, the new system
+          uses an overview-first design for greater visibility and confidence.
         </p>
-        <img src="./img/proplesolimg.png" class="proposolimg" />
+        <div class="con">
+          <img src="./img/stepbystep.svg" alt="" class="conpic" />
+        </div>
       </div>
     </div>
-
     <div class="mockup">
+      <div class="introcontener wow fadeInDown" data-wow-duration="2s">
+        <div class="introcontent">
+          <h2>Design and issue</h2>
+          <p class="introp">
+            Use the tabs above to explore four sections: Login & Registration,
+            Resume Completion, Interview Progress, and Assessments. Each tab
+            contains screen previews and descriptions explaining the design
+            decisions and key improvements for that stage.
+          </p>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button class="btn skyblue first" data-name="login">
+          Login Signup
+        </button>
+        <button class="btn gray" data-name="resume">Resume page</button>
+        <button class="btn ash" data-name="interview">Int. Prog</button>
+        <button class="btn pink" data-name="questionnaire">ASMT Q&A</button>
+      </div>
+      <div class="situation active skyblue" data-name="login">
+        <div class="option lead">
+          <h3 class="title">Redesign Login Page Layout and Logic</h3>
+          <p class="content">
+            This redesign combines the login/signup page with a welcoming
+            interface. Besides maintaining a clear and straightforward process,
+            it creates a focused and inviting atmosphere for users. To prevent
+            users from abandoning registration due to lengthy form completion on
+            a single page (as in the old system), we adopted a multi-page
+            step-by-step flow. This segmented approach both reduces drop-offs
+            and preserves the welcoming experience.
+          </p>
+          <div class="tabcontent">
+            <div class="content">
+              <img src="./img/issue.svg" alt="" class="pic" />
+              <img src="./img/isdesign.svg" alt="" class="pic" />
+            </div>
+            <img src="./img/hrfrontpcdem.png" alt="" class="mainpic" />
+          </div>
+        </div>
+        <div class="option lead">
+          <h3 class="title">Registration Notice for Non-Nationals</h3>
+          <p class="content">
+            Considering that non-native job seekers previously lacked clear
+            guidance on account setup, the new system includes explicit tooltip
+            instructions to help users correctly enter their account numbers.
+            Additionally, password creation now features clear prompts and
+            security warnings to improve account safety and ease of use.
+          </p>
+          <div class="tabcontent">
+            <div class="content">
+              <img src="./img/tooltipiss.svg" alt="" class="pic" />
+              <img src="./img/tooltipdesign.svg" alt="" class="pic" />
+            </div>
+            <img src="./img/hrfrontpcsigninpc.png" alt="" class="mainpic" />
+          </div>
+        </div>
+      </div>
+      <div class="situation gray" data-name="resume">
+        <div class="option lead">
+          <h3 class="title">Smart Job Selection Flow</h3>
+          <p class="content">
+            Candidates can now select up to two preferred roles using a
+            cart-like interface. When a position requires a location preference,
+            the system dynamically displays relevant options—ensuring that only
+            necessary fields appear. This streamlined experience reduces user
+            confusion, improves accuracy, and speeds up the overall application
+            process.
+          </p>
+          <div class="tabcontent">
+            <div class="content">
+              <img src="./img/jobiss.svg" alt="" class="pic" />
+              <img src="./img/jobdesign.svg" alt="" class="pic" />
+            </div>
+            <img src="./img/hrfronsearchpc.png" alt="" class="mainpic" />
+          </div>
+        </div>
+        <div class="option">
+          <h3 class="title">Speeding Up Resume Completion</h3>
+          <p class="content">
+            The resume page features a split layout where the navigation menu
+            and incomplete section alerts are displayed side by side. This
+            allows users to quickly spot which sections still require input and
+            switch between them without losing context. The layout significantly
+            improves task completion rates by reducing confusion and minimizing
+            the chances of users dropping off midway.
+          </p>
+          <div class="tabcontent">
+            <div class="content">
+              <img src="./img/resumeiss.svg" alt="" class="pic" />
+              <img src="./img/resumedesign.svg" alt="" class="pic" />
+            </div>
+            <img src="./img/hrfrontresumepc.png" alt="" class="mainpic" />
+          </div>
+        </div>
+      </div>
+      <div class="situation ash" data-name="interview">
+        <div class="option lead">
+          <h3 class="title">Document Submission Page</h3>
+          <p class="content">
+            For roles that require candidates to submit specific documents
+            before interviews—such as police clearance records, credit checks,
+            or other position-related paperwork—this page consolidates all the
+            required items into a single, clearly organized checklist. Users can
+            view what’s needed at a glance and upload everything directly
+            through the interface, eliminating confusion and reducing
+            back-and-forth communication. This design simplifies the submission
+            process, ensures regulatory compliance, and significantly improves
+            operational efficiency for both candidates and HR.
+          </p>
+          <div class="tabcontent">
+            <div class="content">
+              <img src="./img/intiss.svg" alt="" class="pic" />
+              <img src="./img/intdesign.svg" alt="" class="pic" />
+            </div>
+            <img src="./img/intpc1.png" alt="" class="mainpic" />
+          </div>
+        </div>
+        <div class="option">
+          <h3 class="title">Interview Response Hub</h3>
+          <p class="content">
+            Interview updates are now centralized within a single, dedicated
+            page. Instead of relying on scattered emails or multiple contact
+            points, candidates can view all interview-related notifications—such
+            as invitations, changes, or confirmations—in one place. The
+            interface also allows users to directly reply, confirm attendance,
+            or request a reschedule through intuitive options, greatly reducing
+            communication friction and enhancing the overall experience.
+          </p>
+          <div class="tabcontent">
+            <div class="content">
+              <img src="./img/intiss2.svg" alt="" class="pic" />
+              <img src="./img/intdesign2.svg" alt="" class="pic" />
+            </div>
+            <img src="./img/intpc2.png" alt="" class="mainpic" />
+          </div>
+        </div>
+      </div>
+      <div class="situation pink" data-name="questionnaire">
+        <div class="option lead">
+          <h3 class="title">Assessment Page</h3>
+          <p class="content">
+            This dynamic assessment page handles aptitude, cognitive, and
+            personality tests. Questions update automatically based on role or
+            logic, giving candidates a smooth experience while saving HR time on
+            setup and data handling.
+          </p>
+          <div class="tabcontent">
+            <div class="content">
+              <img src="./img/qaissue.svg" alt="" class="pic" />
+              <img src="./img/qadesign.svg" alt="" class="pic" />
+            </div>
+            <img src="./img/intpc2.png" alt="" class="mainpic" />
+          </div>
+        </div>
+        <div class="option">
+          <h3 class="title">Modular Question Page</h3>
+          <p class="content">
+            To meet current and future test needs, this page adopts a modular
+            design for questions. HR can quickly apply or edit templates,
+            streamlining test creation. Users benefit from a consistent, smooth
+            answering experience across various question types.
+          </p>
+          <div class="tabcontent">
+            <div class="content">
+              <img src="./img/qaissue2.svg" alt="" class="pic" />
+              <img src="./img/qadesign2.svg" alt="" class="pic" />
+            </div>
+            <img src="./img/intpc2.png" alt="" class="mainpic" />
+          </div>
+        </div>
+      </div>
+      <div class="mockupintro wow fadeInDown" data-wow-duration="2s">
+        <div class="mockupintrocon">
+          <h1>Proposol</h1>
+          <p>
+            This frontend redesign refreshes outdated visuals and user flows.
+            Building on the brand’s palette and design language, it introduces a
+            cleaner, more modern look. UX elements adapt to screen needs, while
+            a unified flow ensures clarity and efficiency.
+          </p>
+          <img src="./img/proplesolimg.png" class="proposolimg" />
+        </div>
+      </div>
       <div class="mockuppic">
         <div class="copywritting">
           <h1>Proposed Visual Design Concepts</h1>
@@ -342,140 +532,6 @@
             <img src="./img/mockupc.png" alt="" />
             <img src="./img/mockupc2.png" alt="" />
             <img src="./img/mockupc3.png" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <div class="introcontener wow fadeInDown" data-wow-duration="2s">
-        <div class="introcontent">
-          <h2>Candidate Journey Overview</h2>
-          <p class="introp">
-            Use the tabs above to explore four sections: Login & Registration,
-            Resume Completion, Interview Progress, and Assessments. Each tab
-            contains screen previews and descriptions explaining the design
-            decisions and key improvements for that stage.
-          </p>
-          <div class="con"></div>
-        </div>
-      </div>
-      <div class="btn-group">
-        <button class="btn skyblue first" data-name="login">
-          Login Signup
-        </button>
-        <button class="btn gray" data-name="resume">Resume page</button>
-        <button class="btn ash" data-name="interview">Int. Prog</button>
-        <button class="btn pink" data-name="questionnaire">ASMT Q&A</button>
-      </div>
-      <div class="situation active skyblue" data-name="login">
-        <div class="option lead">
-          <img src="./img/hrfrontpcdem.png" alt="" class="mainpic" />
-          <img src="./img/hrfrontphone.png" alt="" class="secpic" />
-          <div class="tabcontent">
-            <h3 class="title">Redesign Login Page Layout and Logic</h3>
-            <p class="content">
-              This redesign combines the login/signup page with a welcoming
-              interface. Besides maintaining a clear and straightforward
-              process, it creates a focused and inviting atmosphere for users.
-              To prevent users from abandoning registration due to lengthy form
-              completion on a single page (as in the old system), we adopted a
-              multi-page step-by-step flow. This segmented approach both reduces
-              drop-offs and preserves the welcoming experience.
-            </p>
-          </div>
-        </div>
-        <div class="option">
-          <img src="./img/hrfrontpcsigninpc.png" alt="" class="mainpic" />
-          <img src="./img/hrfrontpcsigninm.png" alt="" class="secpic" />
-          <div class="tabcontent">
-            <h3 class="title">Registration Notice for Non-Nationals</h3>
-            <p class="content">
-              Considering that non-native job seekers previously lacked clear
-              guidance on account setup, the new system includes explicit
-              tooltip instructions to help users correctly enter their account
-              numbers. Additionally, password creation now features clear
-              prompts and security warnings to improve account safety and ease
-              of use.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="situation gray" data-name="resume">
-        <div class="option lead">
-          <img src="./img/hrfronsearchpc.png" alt="" class="mainpic" />
-          <img src="./img/hrfronsearchm.png" alt="" class="secpic" />
-          <div class="tabcontent">
-            <h3 class="title">Smart Job Selection Flow</h3>
-            <p class="content">
-              Candidates can select up to two roles in a cart-like flow.
-              Location options show only when needed, making the process clear
-              and efficient.
-            </p>
-          </div>
-        </div>
-        <div class="option">
-          <img src="./img/hrfrontresumepc.png" alt="" class="mainpic" />
-          <img src="./img/hrfrontresumem.png" alt="" class="secpic" />
-          <div class="tabcontent">
-            <h3 class="title">Speeding Up Resume Completion</h3>
-            <p class="content">
-              The resume page displays navigation and incomplete section alerts
-              side by side, enabling users to quickly switch between sections
-              and reducing the likelihood of drop-offs.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="situation ash" data-name="interview">
-        <div class="option lead">
-          <img src="./img/intpc1.png" alt="" class="mainpic" />
-          <img src="./img/intm1.png" alt="" class="secpic" />
-          <div class="tabcontent">
-            <h3 class="title">Document Submission Page</h3>
-            <p class="content">
-              For roles needing pre-interview documents—like police records or
-              credit checks—this page lists all requirements clearly and lets
-              users upload everything in one place. It keeps the process simple,
-              compliant, and efficient.
-            </p>
-          </div>
-        </div>
-        <div class="option">
-          <img src="./img/intpc2.png" alt="" class="mainpic" />
-          <img src="./img/intm2.png" alt="" class="secpic" />
-          <div class="tabcontent">
-            <h3 class="title">Interview Response Hub</h3>
-            <p class="content">
-              Interview updates are centralized, making it easy to reply,
-              reschedule, or confirm—all in one place.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="situation pink" data-name="questionnaire">
-        <div class="option lead">
-          <img src="./img/asmtpc1.png" alt="" class="mainpic" />
-          <img src="./img/asmtm1.png" alt="" class="secpic" />
-          <div class="tabcontent">
-            <h3 class="title">Assessment Page</h3>
-            <p class="content">
-              This dynamic assessment page handles aptitude, cognitive, and
-              personality tests. Questions update automatically based on role or
-              logic, giving candidates a smooth experience while saving HR time
-              on setup and data handling.
-            </p>
-          </div>
-        </div>
-        <div class="option">
-          <img src="./img/asmtpc2.png" alt="" class="mainpic" />
-          <img src="./img/asmtm2.png" alt="" class="secpic" />
-          <div class="tabcontent">
-            <h3 class="title">Modular Question Page</h3>
-            <p class="content">
-              To meet current and future test needs, this page adopts a modular
-              design for questions. HR can quickly apply or edit templates,
-              streamlining test creation. Users benefit from a consistent,
-              smooth answering experience across various question types.
-            </p>
           </div>
         </div>
       </div>
