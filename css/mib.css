@@ -310,7 +310,7 @@ body {
   flex-wrap: wrap row;
   align-items: center;
   justify-content: space-between;
-  padding-top: 120px;
+  padding-top: 200px;
 
   @media (width<=760px) {
     flex-direction: column;
@@ -706,6 +706,12 @@ body {
   border: none;
   background-color: unset;
 }
+#mor {
+  font-family: "roboto";
+  font-size: 18px;
+  padding-bottom: 16px;
+  color: #00a19b;
+}
 
 .swiper-container {
   overflow: hidden;
@@ -990,7 +996,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (width<=958px) {
+  @media (width<=1312px) {
     padding: 20px 0 0 0px;
     flex-wrap: wrap;
     gap: 40px;
@@ -1009,7 +1015,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0 34px;
-  @media (width<=944px) {
+  @media (width<=1310px) {
     order: -2;
   }
 }
@@ -1019,7 +1025,7 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  margin-bottom: 66px;
+  margin-bottom: 33px;
 }
 
 .horizontalcontent .hortopcontent .title.hor2 {
@@ -1030,6 +1036,44 @@ body {
   margin-bottom: 24px;
 }
 
+.horizontalcontent .hortopcontent.conclude {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 34px;
+  @media (width<=944px) {
+    order: -2;
+  }
+}
+
+.horizontalcontent .hortopcontent.conclude .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 33px;
+}
+
+.horizontalcontent .hortopcontent.conclude .title.hor2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.concloudeimg {
+  display: flex;
+  flex-direction: row;
+
+  gap: 12px;
+  margin-top: 32px;
+  @media (width<=944px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .horizontalcontent .hor.hor_top h3 {
   color: #000;
   text-align: center;
@@ -1038,7 +1082,7 @@ body {
 }
 .horizontalcontent .hor.hor_top p {
   color: #000;
-  text-align: center;
+  text-align: left;
   font-size: 24px;
   font-weight: 400;
 }

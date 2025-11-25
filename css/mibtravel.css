@@ -54,7 +54,7 @@ body {
 .hero .purpose p {
   color: #fff;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -219,7 +219,7 @@ body {
 
 .intro .copywrite h1 {
   color: #22615e;
-  text-align: center;
+  text-align: left;
   font-family: Roboto;
   font-size: 40px;
   font-style: normal;
@@ -231,7 +231,7 @@ body {
 .intro .copywrite p {
   color: #22615e;
   font-family: Roboto;
-  font-size: 24px;
+  font-size: 26px;
   font-style: normal;
   font-weight: 600;
   line-height: 25px; /* 125% */
@@ -302,7 +302,7 @@ body {
   flex-wrap: wrap row;
   align-items: center;
   justify-content: space-between;
-  padding-top: 120px;
+  padding-top: 200px;
 
   @media (width<=760px) {
     flex-direction: column;
@@ -716,6 +716,13 @@ body {
   top: 20px;
   border: none;
   background-color: unset;
+}
+
+#mor {
+  font-family: "roboto";
+  font-size: 18px;
+  padding-bottom: 16px;
+  color: #00a19b;
 }
 
 .swiper-container {
