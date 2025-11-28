@@ -99,6 +99,21 @@
   }
 }
 
+.link {
+  background-color: #28b3b7;
+  width: 5vw;
+  height: 5vw;
+  display: flex;
+  @media (width<=760px) {
+    width: 5vw;
+    height: 5vw;
+  }
+}
+
+.link img {
+  transform: rotate(180deg);
+}
+
 .computer {
   z-index: 1;
   grid-row: 2/4;
@@ -139,6 +154,7 @@
 .app {
   font-size: 3vw;
   font-family: "miso";
+  margin-left: 20px;
 }
 
 .trans {
@@ -281,3 +297,69 @@
     background-color: #867e7e;
     margin-right: 40px;
   } */
+
+.appcont {
+  display: flex;
+  flex-direction: column;
+}
+
+.mapp {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mapp .app {
+  cursor: pointer;
+}
+
+#apcontent {
+  width: 90%;
+}
+
+.aboutapp {
+  background-color: #28b3b7;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  align-items: center;
+  border-radius: 100px;
+  padding: 8px 8px;
+  cursor: pointer;
+  @media (width<=960px) {
+    margin-left: 42px;
+  }
+}
+
+.aboutapp:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.aboutapp img {
+  width: 20%;
+  transform: rotate(180deg);
+}
+
+.aboutapp p {
+  color: #151515;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 133.333% */
+  margin: 0;
+  width: 100%;
+  padding: 12px 12px;
+
+  @media (width<=960px) {
+    width: 100%;
+  }
+}
+
+.moreaa {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}

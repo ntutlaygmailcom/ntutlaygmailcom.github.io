@@ -88,6 +88,7 @@
   box-shadow: -2vmin 2vmin 5vmin -2vmin rgba(#000, 0.5),
     inset 0 0 0.5vmin 0.2vmin #cccccc, inset 0 0 0 1vmin #fafafa;
   z-index: 1;
+  
 }
 
 #coffeBg {
@@ -824,20 +825,18 @@
   align-items: flex-start;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  margin-top: 20%;
+  margin-top: 5%;
 
   @media (width<=1659px) {
     margin-top: 10%;
   }
 
   @media (width<=1164px) {
-    margin-top: 200%;
+    margin-top: 100%;
   }
-
   @media (width<932px) {
-    margin-top: 170%;
+    margin-top: 80%;
   }
-
   @media (width<=760px) {
     margin-top: 80px;
   }
