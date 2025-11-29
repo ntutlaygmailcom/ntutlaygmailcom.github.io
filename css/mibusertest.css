@@ -57,7 +57,6 @@ body {
   font-family: Roboto;
   font-size: 26px;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
   width: 80%;
   margin: auto;
@@ -230,9 +229,7 @@ body {
   font-family: Roboto;
   font-size: 26px;
   font-style: normal;
-  font-weight: 600;
   line-height: 32px; /* 125% */
-  letter-spacing: -0.2px;
   text-align: left;
   margin: 0px 20px;
 }

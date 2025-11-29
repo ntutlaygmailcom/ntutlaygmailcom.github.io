@@ -5,6 +5,13 @@ html {
 body {
   background-color: #b7e1e0;
 }
+@font-face {
+  font-family: "roboto";
+  src: url("/font/Roboto-Medium-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
 /* * {
   outline: 1px solid #00000030;
@@ -54,9 +61,8 @@ body {
 .hero .purpose p {
   color: #fff;
   font-family: Roboto;
-  font-size: 18px;
+  font-size: 26px;
   font-style: normal;
-  font-weight: 700;
   line-height: normal;
   width: 80%;
   margin: auto;
@@ -237,9 +243,7 @@ body {
   font-family: Roboto;
   font-size: 24px;
   font-style: normal;
-  font-weight: 600;
   line-height: 25px; /* 125% */
-  letter-spacing: -0.2px;
   padding-bottom: 12px;
 }
 
@@ -1246,4 +1250,55 @@ body {
 
 .perimg {
   width: 50px;
+}
+
+.swiper-navigation-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev img {
+  margin-left: 160px;
+  transform: rotate(180deg);
+
+  @media (width<=958px) {
+    display: none;
+  }
+}
+
+.swiper-button-next img {
+  margin-right: 180px;
+
+  @media (width<=980px) {
+    display: none;
+  }
+}
+
+/* Hide default Swiper arrows if they appear */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
 }
