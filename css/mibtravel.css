@@ -1271,6 +1271,7 @@ body {
 .swiper-button-prev img {
   margin-left: 160px;
   transform: rotate(180deg);
+  z-index: -20;
 
   @media (width<=958px) {
     display: none;
@@ -1279,6 +1280,7 @@ body {
 
 .swiper-button-next img {
   margin-right: 180px;
+  z-index: -5;
 
   @media (width<=980px) {
     display: none;

@@ -795,11 +795,15 @@
             button.classList.remove("rotated");
           }
 
-          const conswiper = document.querySelector(".swiper-container");
-          window.scrollTo({
-            top: conswiper.offsetTop - 80,
-            behavior: "smooth",
-          });
+          const slideContent = area.closest(".slide-content");
+          if (slideContent) {
+            const topPosition =
+              slideContent.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({
+              top: topPosition - 80,
+              behavior: "smooth",
+            });
+          }
         });
       });
 
@@ -818,15 +822,17 @@
             if (isExpanded) {
               taggleArea.classList.remove("expanded");
               this.classList.remove("rotated");
-              const conswiper = document.querySelector(".swiper-container");
-              if (conswiper) {
+              const slideContent = this.closest(".slide-content");
+              if (slideContent) {
+                const topPosition =
+                  slideContent.getBoundingClientRect().top + window.scrollY;
                 window.scrollTo({
-                  top: conswiper.offsetTop - 80,
+                  top: topPosition - 80,
                   behavior: "smooth",
                 });
               }
             } else {
-              tagglearea.classList.add("expanded");
+              taggleArea.classList.add("expanded");
               this.classList.add("rotated");
             }
           });
