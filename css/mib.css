@@ -30,7 +30,7 @@ body {
   align-items: center;
   height: 90vh;
   @media (width<=760px) {
-    height: 100vh;
+    height: 112vh;
   }
 }
 
@@ -56,6 +56,9 @@ body {
     margin-bottom: 12px;
     margin-top: 20px;
   }
+  @media (width<=460px) {
+    font-size: 36px;
+  }
 }
 
 .hero .purpose p {
@@ -66,11 +69,12 @@ body {
   line-height: normal;
   width: 80%;
   margin: auto;
+  font-weight: 700;
   margin-bottom: 20px;
   @media (width<=760px) {
     color: #fff;
     font-family: Roboto;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -86,6 +90,10 @@ body {
   gap: 20px;
   width: 80%;
   margin: auto;
+  @media (width<=460px) {
+    gap: 8px;
+    margin-bottom: 50px;
+  }
 }
 
 .hero .purpose .btn a {
@@ -107,6 +115,10 @@ body {
   @media (width<=760px) {
     width: 100%;
     padding: 20px 12px;
+  }
+
+  @media (width<=460px) {
+    font-size: 17px;
   }
 }
 
@@ -222,6 +234,12 @@ body {
     margin-bottom: 50px;
     margin-right: 0px;
   }
+  @media (width<=460px) {
+    margin-left: 20px;
+    margin-top: 80px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+  }
 }
 
 .intro .copywrite h1 {
@@ -234,7 +252,8 @@ body {
   line-height: normal;
   padding-bottom: 14px;
   text-align: left;
-  @media (width<=804px) {
+  @media (width<=460px) {
+    font-size: 36px;
   }
 }
 
@@ -245,6 +264,14 @@ body {
   font-style: normal;
   line-height: 25px; /* 125% */
   padding-bottom: 12px;
+  font-weight: 700;
+  @media (width<=460px) {
+    font-family: Roboto;
+    font-size: 16px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .intro .picture img {
